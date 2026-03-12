@@ -356,3 +356,264 @@ Constructor Injection
 ```
 
 API 可以随时查文档。
+
+
+# Note 2
+
+## 1. 实时流系统的基本 Pipeline 结构
+AIS 数据处理属于 **实时流处理（stream processing）**，推荐结构：
+
+```
+MQTT Listener
+      ↓
+Mapper (DTO → Domain)
+      ↓
+Dispatcher (事件分发)
+      ↓
+Engines / Services
+      ↓
+WebSocket / API
+```
+
+各层职责：
+
+| 层 | 职责 |
+|---|---|
+Listener | 接收外部消息（MQTT / Kafka / HTTP） |
+Mapper | DTO → Domain 转换 |
+Dispatcher | 事件分发（fan-out） |
+Engine | 计算逻辑 |
+WebSocket / API | 对外输出 |
+
+原则：
+
+- **通信层不包含业务逻辑**
+- **Dispatcher 只做调度，不做计算**
+
+---
+
+## 2. Mapper 的职责：DTO → Domain
+Mapper 负责：
+
+- 字段映射
+- 类型转换
+- 领域语义计算
+
+例如：
+
+```
+mmsi == ownShipMmsi → ShipRole
+```
+
+这是 **领域语义确定（domain semantic mapping）**，适合在 Mapper 阶段完成。
+
+好处：
+
+- 避免重复判断
+- 提升领域语义
+- 减少配置依赖传播
+
+Domain 对象应尽量 **不可变（immutable event）**。
+
+---
+
+## 3. Domain Model 应表达语义，而不是原始数据
+不推荐：
+
+```
+if (message.getMmsi() == ownShipMmsi)
+```
+
+推荐：
+
+```
+if (message.getRole() == OWN_SHIP)
+```
+
+领域对象应表达：
+
+```
+ShipRole
+CPAResult
+PredictionResult
+```
+
+而不是仅仅承载原始字段。
+
+---
+
+## 4. Dispatcher 的职责
+Dispatcher 是 **系统内部消息路由器（message router）**。
+
+职责：
+
+```
+dispatch(message)
+  → engine1
+  → engine2
+  → engine3
+  → websocket
+```
+
+Dispatcher：
+
+- 不做计算
+- 不存状态
+- 只负责 **fan-out**
+
+这是实时流系统常见模式。
+
+---
+
+## 5. 实时系统必须避免同步阻塞
+如果一个 Engine 计算耗时较长：
+
+```
+CV prediction ≈ 2s
+```
+
+同步 pipeline 会变成：
+
+```
+AIS → CV → CPA → WebSocket
+```
+
+结果：
+
+```
+整条数据流被阻塞
+```
+
+正确策略：
+
+```
+Dispatcher
+   → engine A (async)
+   → engine B (async)
+   → engine C (async)
+   → websocket
+```
+
+原则：
+
+**慢计算不能阻塞数据流。**
+
+---
+
+## 6. WebSocket topic 不应泄漏到业务层
+不推荐：
+
+```
+dispatcher
+  → websocketService.consume("/topic/ais", message)
+```
+
+原因：
+
+- pipeline 层不应知道 transport routing
+- topic 属于 WebSocket 细节
+
+推荐：
+
+```
+dispatcher
+  → websocketService.sendAisMessage(message)
+```
+
+topic 只存在于：
+
+```
+WebSocketService
+```
+
+---
+
+## 7. WebSocketService 设计原则
+WebSocketService 提供 **语义接口**：
+
+```
+sendAisMessage()
+sendCpTcpaResult()
+sendCvPredictionResult()
+sendShipDomainResult()
+```
+
+内部统一：
+
+```
+sendMessage(topic, payload)
+```
+
+topic 统一集中管理。
+
+---
+
+## 8. 配置对象可以被多个组件注入
+在 Spring 中：
+
+```
+@ConfigurationProperties
+```
+
+通常是 **singleton bean**。
+
+多个组件依赖是正常的：
+
+```
+Mapper
+Dispatcher
+Engine
+```
+
+都可以依赖同一个配置对象。
+
+无需刻意减少注入次数。
+
+---
+
+## 9. 实时系统常见模块结构
+典型实时 AIS 服务：
+
+```
+mqtt        → 数据接入
+pipeline    → 数据分发
+engine      → 计算模块
+websocket   → 实时推送
+api         → 查询接口
+domain      → 数据模型
+config      → 配置
+```
+
+数据流：
+
+```
+mqtt → pipeline → engines → websocket/api
+```
+
+---
+
+## 10. 实时计算模块通常共享状态
+许多算法依赖同一状态：
+
+- CPA/TCPA
+- Ship Domain
+- CV Prediction
+
+通常共享：
+
+```
+ShipTrack / ShipStateStore
+```
+
+用于维护：
+
+```
+历史位置
+速度
+航向
+轨迹
+```
+
+这是 AIS 系统核心状态层。
+
+---
