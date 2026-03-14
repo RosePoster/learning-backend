@@ -56,7 +56,7 @@
 - [x] 211. Design Add and Search Words Data Structure [Medium]
 - [x] 648. Replace Words [Medium]
 - [x] 677. Map Sum Pairs [Medium]
-- [ ] 137. Single Number II [Medium]
+- [x] 137. Single Number II [Medium]
 - [ ] 260. Single Number III [Medium]
 - [ ] 212. Word Search II [Hard]
 - [ ] 421. Maximum XOR of Two Numbers in an Array [Medium]
