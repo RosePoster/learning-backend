@@ -59,7 +59,7 @@
 - [x] 137. Single Number II [Medium]
 - [x] 260. Single Number III [Medium]
 - [x] 212. Word Search II [Hard]
-- [ ] 421. Maximum XOR of Two Numbers in an Array [Medium]
+- [o] 421. Maximum XOR of Two Numbers in an Array [Medium]
 - [ ] 318. Maximum Product of Word Lengths [Medium]
 - [ ] 338. Counting Bits [Easy]
 - [ ] 1707. Maximum XOR With an Element From Array [Hard]
