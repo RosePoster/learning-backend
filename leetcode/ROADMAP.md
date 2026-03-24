@@ -15,7 +15,7 @@
 - [x] 875. Koko Eating Bananas [Medium]
 - [x] 1011. Capacity To Ship Packages Within D Days [Medium]
 - [x] 410. Split Array Largest Sum [Hard]
-- [ ] 540. Single Element in a Sorted Array [Medium]
+- [x] 540. Single Element in a Sorted Array [Medium]
 
 ## Round 2 Prefix Sum & Difference Array
 - [x] 303. Range Sum Query - Immutable [Easy]
@@ -74,7 +74,7 @@
 - [x] 904. Fruit Into Baskets [Medium]
 - [x] 438. Find All Anagrams in a String [Medium]
 - [x] 76. Minimum Window Substring [Hard]
-- [ ] 567. Permutation in String [Medium]
+- [x] 567. Permutation in String [Medium]
 - [ ] 1004. Max Consecutive Ones III [Medium]
 - [ ] 424. Longest Repeating Character Replacement [Medium]
 - [ ] 1208. Get Equal Substrings Within Budget [Medium]
