@@ -104,7 +104,7 @@
 - [x] 16. 3Sum Closest [Medium]
 - [x] 167. Two Sum II - Input Array Is Sorted [Medium]
 - [x] 268. Missing Number [Easy]
-- [ ] 36. Valid Sudoku [Medium]
+- [x] 36. Valid Sudoku [Medium]
 - [ ] 274. H-Index [Medium]
 - [ ] 334. Increasing Triplet Subsequence [Medium]
 - [ ] 443. String Compression [Medium]
