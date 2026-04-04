@@ -105,7 +105,7 @@
 - [x] 167. Two Sum II - Input Array Is Sorted [Medium]
 - [x] 268. Missing Number [Easy]
 - [x] 36. Valid Sudoku [Medium]
-- [ ] 274. H-Index [Medium]
+- [x] 274. H-Index [Medium]
 - [ ] 334. Increasing Triplet Subsequence [Medium]
 - [ ] 443. String Compression [Medium]
 - [ ] 581. Shortest Unsorted Continuous Subarray [Medium]
