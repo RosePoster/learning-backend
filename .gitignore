@@ -1,5 +1,49 @@
-.idea/
-*.iml
+# AI
+CLAUDE.md
+.codex
 
+# OS
 .DS_Store
 Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Java / Maven
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Env / local config
+.env
+.env.*
+application-local.yml
+application-local.yaml
+
+# Generated data
+data/
+output/
+tmp/
+cache/
+
+# Archives
+*.zip
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Misc
+*.swp
+*.swo
