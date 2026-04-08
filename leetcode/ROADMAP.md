@@ -109,7 +109,7 @@
 - [x] 334. Increasing Triplet Subsequence [Medium]
 - [x] 443. String Compression [Medium]
 - [x] 581. Shortest Unsorted Continuous Subarray [Medium]
-- [ ] 442. Find All Duplicates in an Array [Medium]
+- [x/r] 442. Find All Duplicates in an Array [Medium]
 
 
 ## Round 7 Linked List
@@ -466,6 +466,8 @@
 - Round 24 - Round 27 为复刷 / 高频 / 模拟轮，`[ ]` 表示该轮复刷任务尚未完成，即使题目之前 AC 过，也需要在复刷时单独勾选。
 - 主线唯一题数 358，道复刷任务 48，总任务量 406。
 - 使用方式：平时顺着主线往下刷；每完成 2-3 个专题轮，插入 1 个复刷轮。
+- x表示AC，o表示会员题跳过，r表示值得重做。
+
 
 ## Execution Notes
 - 每天默认 1 道主线新题。
