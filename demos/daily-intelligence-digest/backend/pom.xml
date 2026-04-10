@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.roseseal</groupId>
-	<artifactId>daily-intelligence-digest</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>daily-intelligence-digest</name>
+	<name>backend</name>
 	<description/>
 	<url/>
 	<licenses>
