@@ -422,8 +422,8 @@
 ## Round 25 ByteDance 高频复刷 II
 - [ ] 23. Merge k Sorted Lists [Hard]
 - [ ] 25. Reverse Nodes in k-Group [Hard]
-- [ ] 42. Trapping Rain Water [Hard]
-- [ ] 72. Edit Distance [Medium]
+- [x] 42. Trapping Rain Water [Hard]
+- [x] 72. Edit Distance [Medium]
 - [ ] 124. Binary Tree Maximum Path Sum [Hard]
 - [ ] 139. Word Break [Medium]
 - [ ] 200. Number of Islands [Medium]
