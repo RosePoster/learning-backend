@@ -425,7 +425,7 @@
 - [x] 42. Trapping Rain Water [Hard]
 - [x] 72. Edit Distance [Medium]
 - [ ] 124. Binary Tree Maximum Path Sum [Hard]
-- [ ] 139. Word Break [Medium]
+- [x] 139. Word Break [Medium]
 - [ ] 200. Number of Islands [Medium]
 - [ ] 208. Implement Trie (Prefix Tree) [Medium]
 - [ ] 253. Meeting Rooms II [Medium]
