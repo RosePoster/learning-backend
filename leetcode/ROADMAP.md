@@ -216,9 +216,9 @@
 
 ## Round 13 Graph BFS / DFS
 - [x] 200. Number of Islands [Medium]
-- [ ] 695. Max Area of Island [Medium]
+- [x] 695. Max Area of Island [Medium]
 - [ ] 733. Flood Fill [Easy]
-- [ ] 542. 01 Matrix [Medium]
+- [x/r] 542. 01 Matrix [Medium]
 - [ ] 994. Rotting Oranges [Medium]
 - [ ] 1162. As Far from Land as Possible [Medium]
 - [ ] 417. Pacific Atlantic Water Flow [Medium]
@@ -230,7 +230,7 @@
 - [ ] 909. Snakes and Ladders [Medium]
 - [ ] 934. Shortest Bridge [Medium]
 - [ ] 1293. Shortest Path in a Grid with Obstacles Elimination [Hard]
-- [ ] 286. Walls and Gates
+- [ ] 286. Walls and Gates [Medium]
 
 ## Round 14 Topological Sort / Shortest Path / MST
 - [x] 207. Course Schedule [Medium]
