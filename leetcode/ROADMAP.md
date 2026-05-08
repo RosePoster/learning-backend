@@ -143,8 +143,8 @@
 - [x] 1047. Remove All Adjacent Duplicates In String [Easy]
 - [x] 496. Next Greater Element I [Easy]
 - [x] 503. Next Greater Element II [Medium]
-- [o] 316. Remove Duplicate Letters [Medium]
-- [ ] 1249. Minimum Remove to Make Valid Parentheses [Medium]
+- [r] 316. Remove Duplicate Letters [Medium]
+- [x/r] 1249. Minimum Remove to Make Valid Parentheses [Medium]
 
 ## Round 9 Binary Tree Traversal & Construction
 - [x] 94. Binary Tree Inorder Traversal [Easy]
