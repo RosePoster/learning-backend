@@ -235,7 +235,7 @@
 
 ## Round 14 Topological Sort / Shortest Path / MST
 - [x] 207. Course Schedule [Medium]
-- [ ] 210. Course Schedule II [Medium]
+- [x] 210. Course Schedule II [Medium]
 - [x] 743. Network Delay Time [Medium]
 - [ ] 797. All Paths From Source to Target [Medium]
 - [ ] 269. Alien Dictionary [Hard]
