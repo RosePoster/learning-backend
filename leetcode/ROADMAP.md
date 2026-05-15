@@ -1,4 +1,4 @@
-﻿# LeetCode Roadmap
+# LeetCode Roadmap
 
 ## Round 1 Binary Search
 - [x] 704. Binary Search [Easy]
@@ -241,7 +241,7 @@
 - [-] 269. Alien Dictionary [Hard]
 - [x] 2115. Find All Possible Recipes from Given Supplies [Medium]
 - [ ] 1203. Sort Items by Groups Respecting Dependencies [Hard]
-- [ ] 310. Minimum Height Trees [Medium]
+- [x] 310. Minimum Height Trees [Medium]
 - [ ] 802. Find Eventual Safe States [Medium]
 - [ ] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
 - [x] 787. Cheapest Flights Within K Stops [Medium]
