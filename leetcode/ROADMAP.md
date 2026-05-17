@@ -242,7 +242,7 @@
 - [x] 2115. Find All Possible Recipes from Given Supplies [Medium]
 - [r] 1203. Sort Items by Groups Respecting Dependencies [Hard]
 - [x/r] 310. Minimum Height Trees [Medium]
-- [ ] 802. Find Eventual Safe States [Medium]
+- [x] 802. Find Eventual Safe States [Medium]
 - [ ] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
 - [x] 787. Cheapest Flights Within K Stops [Medium]
 - [ ] 1514. Path with Maximum Probability [Medium]
