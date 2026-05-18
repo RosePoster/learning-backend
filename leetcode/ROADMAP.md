@@ -246,7 +246,7 @@
 - [ ] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
 - [x] 787. Cheapest Flights Within K Stops [Medium]
 - [ ] 1514. Path with Maximum Probability [Medium]
-- [ ] 1368. Minimum Cost to Make at Least One Valid Path in a Grid [Hard]
+- [x] 1368. Minimum Cost to Make at Least One Valid Path in a Grid [Hard]
 - [ ] 778. Swim in Rising Water [Hard]
 - [x] 1631. Path With Minimum Effort [Medium]
 - [ ] 815. Bus Routes [Hard]
