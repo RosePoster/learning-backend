@@ -1,6 +1,303 @@
 # LeetCode Roadmap
 
-## Round 1 Binary Search
+## 执行计划（2026-05-18 → 2027-02-15，9 个月）
+
+节奏：**每天至少 1 题不断手感**，编码任务轻时加 1-2 道小菜。
+推进顺序：从上往下扫第一个 `[ ]`。Round 越靠前越重要。
+
+### 三个 Phase
+- **NEW** — 新题。完整流程（计时 → 思考 → 编码 → AC → GPT 整理笔记（含主流解对照）→ git）。1 道为主菜。
+- **AUDIT** — 反虚假进步审计。题目已在旧 Round AC，本轮独立白板限时复盘（简单 25min / 中等 35min），出声讲，不查 API，跑反例。失败率 > 30% 时该组扩大审计。
+- **MOCK** — 面试模拟。45min 硬截止 + 自造反例（不依赖 LC 测试用例 debug）+ 出声讲（题意复述 / 朴素解 / 优化方向 / 不变量 / 复杂度 / 反例）。
+
+### Phase 推进总览
+
+| Round | 主题 | Phase | 题量 |
+|---|---|---|---|
+| 1 | Topo/Shortest Path 收官 + Templates 整理 | NEW | 5 |
+| 2 | Union-Find | NEW | 13 |
+| 3 | Design 核心 | NEW | 7 |
+| 4 | Advanced Array / Matrix | NEW | 13 |
+| 5 | R7-R12 反虚假进步审计 | AUDIT | 17 |
+| 6 | Monotonic Stack 变体 | NEW | 10 |
+| 7 | Math / Bit / Trick 补盲 | NEW | 7 |
+| 8 | Design 第二批 | NEW | 8 |
+| 9 | DP cherry-pick | NEW | 7 |
+| 10 | ByteDance 高频 I | MOCK | 12 |
+| 11 | ByteDance 高频 II 剩余 | MOCK | 5 |
+| 12 | Tencent 高频 | MOCK | 12 |
+| 13 | Hard 终局 mock | MOCK | 12 |
+| 14 | 多线程 / 并发同步 | NEW | 4 |
+| 15 | Segment Tree / BIT | NEW | 6 |
+| 16 | String 算法（KMP / Manacher / Rolling Hash）| NEW | 5 |
+| 17 | Sweep Line | NEW | 4 |
+| 18 | 博弈 DP | NEW | 4 |
+| 19 | Reservoir Sampling + Trie 深度变体 | NEW | 5 |
+
+合计 **156 题**，9 个月预算充裕；剩余时间用于项目准备 + mock 反复刷。
+
+### 标记说明
+- `[x]` AC
+- `[ ]` 未完成
+- `[-]` 会员题跳过
+- `[x/r]` AC 但值得重做（软件自动 review 模式拉取）
+- `[r]` 耗时太久必须重做（软件自动 review 模式拉取）
+
+---
+
+# ============== Round 1 · Topo/Shortest Path 收官 + Templates 整理 [Phase: NEW] ==============
+
+附加任务：本轮完成后，把 `templates/` 下缺失的轮次模板补齐（Topological Sort / Shortest Path / MST / Linked List / Tree / Backtracking / Greedy / DP 等）。
+
+- [x/r] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
+- [ ] 1514. Path with Maximum Probability [Medium]
+- [ ] 778. Swim in Rising Water [Hard]
+- [ ] 815. Bus Routes [Hard]
+- [ ] 1584. Min Cost to Connect All Points [Medium]
+
+# ============== Round 2 · Union-Find [Phase: NEW] ==============
+
+- [ ] 547. Number of Provinces [Medium]
+- [ ] 990. Satisfiability of Equality Equations [Medium]
+- [ ] 1971. Find if Path Exists in Graph [Easy]
+- [ ] 685. Redundant Connection II [Hard]
+- [ ] 399. Evaluate Division [Medium]
+- [ ] 721. Accounts Merge [Medium]
+- [ ] 1319. Number of Operations to Make Network Connected [Medium]
+- [ ] 1202. Smallest String With Swaps [Medium]
+- [ ] 959. Regions Cut By Slashes [Medium]
+- [ ] 305. Number of Islands II [Hard]
+- [ ] 323. Number of Connected Components in an Undirected Graph [Medium]
+- [ ] 839. Similar String Groups [Hard]
+- [ ] 1135. Connecting Cities With Minimum Cost [Medium]
+
+# ============== Round 3 · Design 核心 [Phase: NEW] ==============
+
+字节 / 阿里 / Meta 一面 No.1 命中区。LRU 要做到 5min 内手撸 doubly-linked + HashMap。
+
+- [ ] 146. LRU Cache [Medium]
+- [ ] 460. LFU Cache [Hard]
+- [ ] 380. Insert Delete GetRandom O(1) [Medium]
+- [ ] 705. Design HashSet [Easy]
+- [ ] 706. Design HashMap [Easy]
+- [ ] 173. Binary Search Tree Iterator [Medium]
+- [ ] 622. Design Circular Queue [Medium]
+
+# ============== Round 4 · Advanced Array / Matrix [Phase: NEW] ==============
+
+国内大厂一面命中率最高。
+
+- [ ] 41. First Missing Positive [Hard]
+- [ ] 48. Rotate Image [Medium]
+- [ ] 54. Spiral Matrix [Medium]
+- [ ] 57. Insert Interval [Medium]
+- [ ] 73. Set Matrix Zeroes [Medium]
+- [ ] 80. Remove Duplicates from Sorted Array II [Medium]
+- [ ] 86. Partition List [Medium]
+- [ ] 179. Largest Number [Medium]
+- [ ] 220. Contains Duplicate III [Hard]
+- [ ] 289. Game of Life [Medium]
+- [ ] 324. Wiggle Sort II [Medium]
+- [ ] 912. Sort an Array [Medium]
+- [ ] 973. K Closest Points to Origin [Medium]
+
+# ============== Round 5 · R7-R12 反虚假进步审计 [Phase: AUDIT] ==============
+
+题目已在旧 Round 标 `[x]`，本轮作为独立审计任务用 `[ ]` 起步：
+- 简单题限时 25min，中等 35min，Hard 50min
+- 出声讲：题意复述 / 朴素解 / 不变量 / 复杂度 / 反例
+- 不查 Java API，不依赖 LC 测试用例 debug
+- 审计通过标 `[x]`；卡时标 `[x/r]`；崩盘标 `[r]`
+- **某专题（R7/R9/R10/R11/R12）若失败率 > 30%，该组其余未列题目补审计**
+
+- [ ] 297. Serialize and Deserialize Binary Tree [Hard]（R9）
+- [ ] 236. Lowest Common Ancestor of a Binary Tree [Medium]（R10）
+- [ ] 235. Lowest Common Ancestor of a BST [Medium]（R10）
+- [ ] 437. Path Sum III [Medium]（R10）
+- [ ] 124. Binary Tree Maximum Path Sum [Hard]（R10，已有笔记，限时验证）
+- [ ] 199. Binary Tree Right Side View [Medium]（R9，原未刷）
+- [ ] 103. Binary Tree Zigzag Level Order Traversal [Medium]（R9，原未刷）
+- [ ] 206. Reverse Linked List [Easy]（R7，5min 极限）
+- [ ] 25. Reverse Nodes in k-Group [Hard]（R7，已有笔记，限时验证）
+- [ ] 138. Copy List with Random Pointer [Medium]（R7）
+- [ ] 142. Linked List Cycle II [Medium]（R7）
+- [ ] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
+- [ ] 46. Permutations [Medium]（R11）
+- [ ] 47. Permutations II [Medium]（R11，原未刷）
+- [ ] 79. Word Search [Medium]（R11）
+- [ ] 56. Merge Intervals [Medium]（R12）
+- [ ] 230. Kth Smallest Element in a BST [Medium]（R10，原未刷，字节高频）
+
+# ============== Round 6 · Monotonic Stack 变体 [Phase: NEW] ==============
+
+已过模板题（42/84/239），本轮补变体辨识能力。
+
+- [ ] 321. Create Maximum Number [Hard]
+- [ ] 1856. Maximum Subarray Min-Product [Medium]
+- [ ] 2104. Sum of Subarray Ranges [Medium]
+- [ ] 1944. Number of Visible People in a Queue [Hard]
+- [ ] 862. Shortest Subarray with Sum at Least K [Hard]
+- [ ] 901. Online Stock Span [Medium]
+- [ ] 456. 132 Pattern [Medium]
+- [ ] 735. Asteroid Collision [Medium]
+- [ ] 1673. Find the Most Competitive Subsequence [Medium]
+- [ ] 2398. Maximum Number of Robots Within Budget [Hard]
+
+# ============== Round 7 · Math / Bit / Trick 补盲 [Phase: NEW] ==============
+
+补 421 暴露过的位运算盲区。
+
+- [ ] 50. Pow(x, n) [Medium]
+- [ ] 29. Divide Two Integers [Medium]
+- [ ] 43. Multiply Strings [Medium]
+- [ ] 172. Factorial Trailing Zeroes [Medium]
+- [ ] 166. Fraction to Recurring Decimal [Medium]
+- [ ] 415. Add Strings [Easy]
+- [ ] 273. Integer to English Words [Hard]
+
+# ============== Round 8 · Design 第二批 [Phase: NEW] ==============
+
+- [ ] 895. Maximum Frequency Stack [Hard]
+- [ ] 341. Flatten Nested List Iterator [Medium]
+- [ ] 1381. Design a Stack With Increment Operation [Medium]
+- [ ] 641. Design Circular Deque [Medium]
+- [ ] 362. Design Hit Counter [Medium]
+- [ ] 359. Logger Rate Limiter [Easy]
+- [ ] 284. Peeking Iterator [Medium]
+- [ ] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
+
+# ============== Round 9 · DP cherry-pick [Phase: NEW] ==============
+
+DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展。
+
+- [ ] 221. Maximal Square [Medium]（R16 唯一未做）
+- [ ] 97. Interleaving String [Medium]
+- [ ] 10. Regular Expression Matching [Hard]
+- [ ] 44. Wildcard Matching [Hard]
+- [ ] 91. Decode Ways [Medium]
+- [ ] 329. Longest Increasing Path in a Matrix [Hard]
+- [ ] 403. Frog Jump [Hard]
+
+# ============== Round 10 · ByteDance 高频 I [Phase: MOCK] ==============
+
+题目大多在主线已 `[x]`，本轮 mock 模式独立重做（白板限时 45min）。
+
+- [ ] 15. 3Sum [Medium]
+- [ ] 31. Next Permutation [Medium]
+- [ ] 56. Merge Intervals [Medium]
+- [ ] 75. Sort Colors [Medium]
+- [ ] 76. Minimum Window Substring [Hard]
+- [ ] 146. LRU Cache [Medium]
+- [ ] 215. Kth Largest Element in an Array [Medium]
+- [ ] 236. Lowest Common Ancestor of a Binary Tree [Medium]
+- [ ] 239. Sliding Window Maximum [Hard]
+- [ ] 297. Serialize and Deserialize Binary Tree [Hard]
+- [ ] 300. Longest Increasing Subsequence [Medium]
+- [ ] 322. Coin Change [Medium]
+
+# ============== Round 11 · ByteDance 高频 II 剩余 [Phase: MOCK] ==============
+
+- [ ] 208. Implement Trie (Prefix Tree) [Medium]
+- [ ] 253. Meeting Rooms II [Medium]
+- [ ] 295. Find Median from Data Stream [Hard]
+- [ ] 329. Longest Increasing Path in a Matrix [Hard]
+- [ ] 410. Split Array Largest Sum [Hard]
+
+# ============== Round 12 · Tencent 高频 [Phase: MOCK] ==============
+
+- [ ] 1. Two Sum [Easy]
+- [ ] 3. Longest Substring Without Repeating Characters [Medium]
+- [ ] 11. Container With Most Water [Medium]
+- [ ] 20. Valid Parentheses [Easy]
+- [ ] 53. Maximum Subarray [Medium]
+- [ ] 55. Jump Game [Medium]
+- [ ] 70. Climbing Stairs [Easy]
+- [ ] 121. Best Time to Buy and Sell Stock [Easy]
+- [ ] 128. Longest Consecutive Sequence [Medium]
+- [ ] 206. Reverse Linked List [Easy]
+- [ ] 215. Kth Largest Element in an Array [Medium]
+- [ ] 300. Longest Increasing Subsequence [Medium]
+
+# ============== Round 13 · Hard 终局 mock [Phase: MOCK] ==============
+
+临考冲刺，每周 2 道完整 mock。
+
+- [ ] 4. Median of Two Sorted Arrays [Hard]
+- [ ] 23. Merge k Sorted Lists [Hard]
+- [ ] 25. Reverse Nodes in k-Group [Hard]
+- [ ] 42. Trapping Rain Water [Hard]
+- [ ] 72. Edit Distance [Medium]
+- [ ] 76. Minimum Window Substring [Hard]
+- [ ] 84. Largest Rectangle in Histogram [Hard]
+- [ ] 124. Binary Tree Maximum Path Sum [Hard]
+- [ ] 146. LRU Cache [Medium]
+- [ ] 212. Word Search II [Hard]
+- [ ] 239. Sliding Window Maximum [Hard]
+- [ ] 410. Split Array Largest Sum [Hard]
+
+# ============== Round 14 · 多线程 / 并发同步 [Phase: NEW] ==============
+
+Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
+
+- [ ] 1114. Print in Order [Easy]
+- [ ] 1115. Print FooBar Alternately [Medium]
+- [ ] 1116. Print Zero Even Odd [Medium]
+- [ ] 1117. Building H2O [Medium]
+
+# ============== Round 15 · Segment Tree / BIT [Phase: NEW] ==============
+
+中后期面试分水岭题，公理推导型有优势。
+
+- [ ] 307. Range Sum Query - Mutable [Medium]
+- [ ] 308. Range Sum Query 2D - Mutable [Hard]
+- [ ] 315. Count of Smaller Numbers After Self [Hard]
+- [ ] 327. Count of Range Sum [Hard]
+- [ ] 493. Reverse Pairs [Hard]
+- [ ] 218. The Skyline Problem [Hard]
+
+# ============== Round 16 · String 算法 [Phase: NEW] ==============
+
+KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
+
+- [ ] 28. Find the Index of the First Occurrence in a String [Easy]
+- [ ] 214. Shortest Palindrome [Hard]
+- [ ] 459. Repeated Substring Pattern [Easy]
+- [ ] 686. Repeated String Match [Medium]
+- [ ] 1392. Longest Happy Prefix [Hard]
+
+# ============== Round 17 · Sweep Line [Phase: NEW] ==============
+
+区间问题进阶，中后台 / 排程类系统设计的算法底座。
+
+- [ ] 1235. Maximum Profit in Job Scheduling [Hard]
+- [ ] 729. My Calendar I [Medium]
+- [ ] 731. My Calendar II [Medium]
+- [ ] 732. My Calendar III [Hard]
+
+# ============== Round 18 · 博弈 DP [Phase: NEW] ==============
+
+DP 的反向思考分支，Meta / 字节有时出。
+
+- [ ] 877. Stone Game [Medium]
+- [ ] 486. Predict the Winner [Medium]
+- [ ] 464. Can I Win [Medium]
+- [ ] 1140. Stone Game II [Medium]
+
+# ============== Round 19 · Reservoir Sampling + Trie 深度变体 [Phase: NEW] ==============
+
+AI 应用 / 推荐系统 / 搜索建议的算法基础。
+
+- [ ] 382. Linked List Random Node [Medium]
+- [ ] 398. Random Pick Index [Medium]
+- [ ] 472. Concatenated Words [Hard]
+- [ ] 642. Design Search Autocomplete System [Hard]
+- [ ] 1268. Search Suggestions System [Medium]
+
+---
+
+# ============== 已完成索引区（不再推进） ==============
+
+## 旧 Round 1 · Binary Search
 - [x] 704. Binary Search [Easy]
 - [x] 35. Search Insert Position [Easy]
 - [x] 34. Find First and Last Position of Element in Sorted Array [Medium]
@@ -17,7 +314,7 @@
 - [x] 410. Split Array Largest Sum [Hard]
 - [x] 540. Single Element in a Sorted Array [Medium]
 
-## Round 2 Prefix Sum & Difference Array
+## 旧 Round 2 · Prefix Sum & Difference Array
 - [x] 303. Range Sum Query - Immutable [Easy]
 - [x] 304. Range Sum Query 2D - Immutable [Medium]
 - [x] 1109. Corporate Flight Bookings [Medium]
@@ -34,7 +331,7 @@
 - [x] 1371. Find the Longest Substring Containing Vowels in Even Counts [Medium]
 - [x] 1094. Car Pooling [Medium]
 
-## Round 3 Heap / Priority Queue
+## 旧 Round 3 · Heap / Priority Queue
 - [x] 215. Kth Largest Element in an Array [Medium]
 - [x] 703. Kth Largest Element in a Stream [Easy]
 - [x] 1046. Last Stone Weight [Easy]
@@ -51,7 +348,7 @@
 - [x] 480. Sliding Window Median [Hard]
 - [x] 2402. Meeting Rooms III [Hard]
 
-## Round 4 Trie & Bit Manipulation
+## 旧 Round 4 · Trie & Bit Manipulation
 - [x] 208. Implement Trie (Prefix Tree) [Medium]
 - [x] 136. Single Number [Easy]
 - [x] 191. Number of 1 Bits [Easy]
@@ -68,7 +365,7 @@
 - [x] 1707. Maximum XOR With an Element From Array [Hard]
 - [x] 461. Hamming Distance [Easy]
 
-## Round 5 Sliding Window Core
+## 旧 Round 5 · Sliding Window Core
 - [x] 3. Longest Substring Without Repeating Characters [Medium]
 - [x] 209. Minimum Size Subarray Sum [Medium]
 - [x] 904. Fruit Into Baskets [Medium]
@@ -85,7 +382,7 @@
 - [x] 713. Subarray Product Less Than K [Medium]
 - [x] 643. Maximum Average Subarray I [Easy]
 
-## Round 6 Array / Hash / Two Pointers
+## 旧 Round 6 · Array / Hash / Two Pointers
 - [x] 1. Two Sum [Easy]
 - [x] 15. 3Sum [Medium]
 - [x] 18. 4Sum [Medium]
@@ -111,8 +408,7 @@
 - [x] 581. Shortest Unsorted Continuous Subarray [Medium]
 - [x/r] 442. Find All Duplicates in an Array [Medium]
 
-
-## Round 7 Linked List
+## 旧 Round 7 · Linked List
 - [x] 21. Merge Two Sorted Lists [Easy]
 - [x] 206. Reverse Linked List [Easy]
 - [x] 203. Remove Linked List Elements [Easy]
@@ -122,14 +418,13 @@
 - [x] 141. Linked List Cycle [Easy]
 - [x] 142. Linked List Cycle II [Medium]
 - [x] 143. Reorder List [Medium]
-- [ ] 92. Reverse Linked List II [Medium]
 - [x] 25. Reverse Nodes in k-Group [Hard]
 - [x] 138. Copy List with Random Pointer [Medium]
 - [x] 2. Add Two Numbers [Medium]
 - [x] 445. Add Two Numbers II [Medium]
 - [x] 148. Sort List [Medium]
 
-## Round 8 Stack / Queue / Parsing
+## 旧 Round 8 · Stack / Queue / Parsing
 - [x] 20. Valid Parentheses [Easy]
 - [x] 155. Min Stack [Medium]
 - [x] 232. Implement Queue using Stacks [Easy]
@@ -146,41 +441,35 @@
 - [r] 316. Remove Duplicate Letters [Medium]
 - [x/r] 1249. Minimum Remove to Make Valid Parentheses [Medium]
 
-## Round 9 Binary Tree Traversal & Construction
+## 旧 Round 9 · Binary Tree Traversal & Construction
 - [x] 94. Binary Tree Inorder Traversal [Easy]
 - [x] 144. Binary Tree Preorder Traversal [Easy]
 - [x] 145. Binary Tree Postorder Traversal [Easy]
 - [x] 102. Binary Tree Level Order Traversal [Medium]
-- [ ] 103. Binary Tree Zigzag Level Order Traversal [Medium]
-- [ ] 199. Binary Tree Right Side View [Medium]
 - [x] 104. Maximum Depth of Binary Tree [Easy]
 - [x] 226. Invert Binary Tree [Easy]
 - [x] 101. Symmetric Tree [Easy]
 - [x] 105. Construct Binary Tree from Preorder and Inorder Traversal [Medium]
 - [x] 106. Construct Binary Tree from Inorder and Postorder Traversal [Medium]
-- [ ] 889. Construct Binary Tree from Preorder and Postorder Traversal [Medium]
 - [x] 297. Serialize and Deserialize Binary Tree [Hard]
 - [x] 222. Count Complete Tree Nodes [Easy]
 - [x] 543. Diameter of Binary Tree [Easy]
 
-## Round 10 BST / Tree DP / LCA
+## 旧 Round 10 · BST / Tree DP / LCA
 - [x] 98. Validate Binary Search Tree [Medium]
 - [x] 700. Search in a Binary Search Tree [Easy]
-- [ ] 230. Kth Smallest Element in a BST [Medium]
 - [x] 235. Lowest Common Ancestor of a Binary Search Tree [Medium]
 - [x] 236. Lowest Common Ancestor of a Binary Tree [Medium]
 - [x] 110. Balanced Binary Tree [Easy]
 - [x] 112. Path Sum [Easy]
 - [x] 113. Path Sum II [Medium]
 - [x] 124. Binary Tree Maximum Path Sum [Hard]
-- [ ] 129. Sum Root to Leaf Numbers [Medium]
 - [x] 437. Path Sum III [Medium]
 - [x] 337. House Robber III [Medium]
 - [x] 572. Subtree of Another Tree [Easy]
 - [x] 654. Maximum Binary Tree [Medium]
-- [ ] 662. Maximum Width of Binary Tree [Medium]
 
-## Round 11 Backtracking
+## 旧 Round 11 · Backtracking
 - [x] 77. Combinations [Medium]
 - [x] 78. Subsets [Medium]
 - [x] 90. Subsets II [Medium]
@@ -188,7 +477,6 @@
 - [x] 40. Combination Sum II [Medium]
 - [x] 216. Combination Sum III [Medium]
 - [x] 46. Permutations [Medium]
-- [ ] 47. Permutations II [Medium]
 - [x] 17. Letter Combinations of a Phone Number [Medium]
 - [x] 22. Generate Parentheses [Medium]
 - [x] 79. Word Search [Medium]
@@ -197,7 +485,7 @@
 - [x] 51. N-Queens [Hard]
 - [x] 37. Sudoku Solver [Hard]
 
-## Round 12 Greedy / Interval
+## 旧 Round 12 · Greedy / Interval
 - [x] 55. Jump Game [Medium]
 - [x] 45. Jump Game II [Medium]
 - [x] 134. Gas Station [Medium]
@@ -211,10 +499,9 @@
 - [x] 860. Lemonade Change [Easy]
 - [x] 1005. Maximize Sum Of Array After K Negations [Easy]
 - [x] 376. Wiggle Subsequence [Medium]
-- [ ] 646. Maximum Length of Pair Chain [Medium]
 - [x] 56. Merge Intervals [Medium]
 
-## Round 13 Graph BFS / DFS
+## 旧 Round 13 · Graph BFS / DFS
 - [x] 200. Number of Islands [Medium]
 - [x] 695. Max Area of Island [Medium]
 - [x] 733. Flood Fill [Easy]
@@ -233,7 +520,7 @@
 - [-] 286. Walls and Gates [Medium]
 - [x] 1926. Nearest Exit from Entrance in Maze [Medium]
 
-## Round 14 Topological Sort / Shortest Path / MST
+## 旧 Round 14 · Topological Sort / Shortest Path / MST（[ ] 部分迁移至新 Round 1）
 - [x] 207. Course Schedule [Medium]
 - [x] 210. Course Schedule II [Medium]
 - [x] 743. Network Delay Time [Medium]
@@ -243,33 +530,11 @@
 - [r] 1203. Sort Items by Groups Respecting Dependencies [Hard]
 - [x/r] 310. Minimum Height Trees [Medium]
 - [x] 802. Find Eventual Safe States [Medium]
-- [ ] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
 - [x] 787. Cheapest Flights Within K Stops [Medium]
-- [ ] 1514. Path with Maximum Probability [Medium]
 - [x] 1368. Minimum Cost to Make at Least One Valid Path in a Grid [Hard]
-- [ ] 778. Swim in Rising Water [Hard]
 - [x] 1631. Path With Minimum Effort [Medium]
-- [ ] 815. Bus Routes [Hard]
-- [ ] 1584. Min Cost to Connect All Points [Medium]
 
-## Round 15 Union-Find
-- [x] 684. Redundant Connection [Medium]
-- [ ] 547. Number of Provinces [Medium]
-- [ ] 990. Satisfiability of Equality Equations [Medium]
-- [ ] 1971. Find if Path Exists in Graph [Easy]
-- [ ] 685. Redundant Connection II [Hard]
-- [ ] 399. Evaluate Division [Medium]
-- [ ] 721. Accounts Merge [Medium]
-- [ ] 1319. Number of Operations to Make Network Connected [Medium]
-- [ ] 1202. Smallest String With Swaps [Medium]
-- [ ] 959. Regions Cut By Slashes [Medium]
-- [ ] 305. Number of Islands II [Hard]
-- [ ] 323. Number of Connected Components in an Undirected Graph [Medium]
-- [ ] 839. Similar String Groups [Hard]
-- [ ] 1135. Connecting Cities With Minimum Cost [Medium]
-- [x] 128. Longest Consecutive Sequence [Medium]
-
-## Round 16 DP - Linear
+## 旧 Round 16 · DP - Linear（[ ] 221 迁移至新 Round 9）
 - [x] 53. Maximum Subarray [Medium]
 - [x] 70. Climbing Stairs [Easy]
 - [x] 62. Unique Paths [Medium]
@@ -284,9 +549,8 @@
 - [x] 674. Longest Continuous Increasing Subsequence [Easy]
 - [x] 718. Maximum Length of Repeated Subarray [Medium]
 - [x] 1035. Uncrossed Lines [Medium]
-- [ ] 221. Maximal Square [Medium]
 
-## Round 17 DP - Knapsack / Partition / Stock
+## 旧 Round 17 · DP - Knapsack / Partition / Stock
 - [x] 121. Best Time to Buy and Sell Stock [Easy]
 - [x] 122. Best Time to Buy and Sell Stock II [Medium]
 - [x] 123. Best Time to Buy and Sell Stock III [Hard]
@@ -303,7 +567,7 @@
 - [x] 377. Combination Sum IV [Medium]
 - [x] 343. Integer Break [Medium]
 
-## Round 18 DP - String
+## 旧 Round 18 · DP - String（部分 [ ] 迁移至新 Round 9，剩余 712/1092/1312 优先级低）
 - [x] 1143. Longest Common Subsequence [Medium]
 - [x] 72. Edit Distance [Medium]
 - [x] 583. Delete Operation for Two Strings [Medium]
@@ -313,168 +577,49 @@
 - [x] 516. Longest Palindromic Subsequence [Medium]
 - [x] 647. Palindromic Substrings [Medium]
 - [x] 5. Longest Palindromic Substring [Medium]
-- [ ] 97. Interleaving String [Medium]
-- [ ] 10. Regular Expression Matching [Hard]
-- [ ] 44. Wildcard Matching [Hard]
-- [ ] 1312. Minimum Insertion Steps to Make a String Palindrome [Hard]
-- [ ] 712. Minimum ASCII Delete Sum for Two Strings [Medium]
-- [ ] 1092. Shortest Common Supersequence [Hard]
 
-## Round 19 DP - Memoization / Advanced
+## 旧 Round 19 · DP - Memoization / Advanced（部分 [ ] 迁移至新 Round 9，其余优先级低）
 - [x] 96. Unique Binary Search Trees [Medium]
 - [x] 95. Unique Binary Search Trees II [Medium]
 - [x] 139. Word Break [Medium]
-- [ ] 91. Decode Ways [Medium]
-- [ ] 120. Triangle [Medium]
-- [ ] 329. Longest Increasing Path in a Matrix [Hard]
-- [ ] 403. Frog Jump [Hard]
-- [ ] 688. Knight Probability in Chessboard [Medium]
-- [ ] 983. Minimum Cost For Tickets [Medium]
-- [ ] 1155. Number of Dice Rolls With Target Sum [Medium]
-- [ ] 931. Minimum Falling Path Sum [Medium]
-- [ ] 1277. Count Square Submatrices with All Ones [Medium]
-- [ ] 174. Dungeon Game [Hard]
-- [ ] 650. 2 Keys Keyboard [Medium]
-- [ ] 1547. Minimum Cost to Cut a Stick [Hard]
 
-## Round 20 Monotonic Stack / Queue
-- [x] 239. Sliding Window Maximum [Hard]
-- [x] 42. Trapping Rain Water [Hard]
-- [x] 84. Largest Rectangle in Histogram [Hard]
-- [x] 85. Maximal Rectangle [Hard]
-- [ ] 321. Create Maximum Number [Hard]
-- [x] 907. Sum of Subarray Minimums [Medium]
-- [ ] 1856. Maximum Subarray Min-Product [Medium]
-- [ ] 2104. Sum of Subarray Ranges [Medium]
-- [ ] 1944. Number of Visible People in a Queue [Hard]
-- [ ] 862. Shortest Subarray with Sum at Least K [Hard]
-- [ ] 901. Online Stock Span [Medium]
-- [ ] 456. 132 Pattern [Medium]
-- [ ] 735. Asteroid Collision [Medium]
-- [ ] 1673. Find the Most Competitive Subsequence [Medium]
-- [ ] 2398. Maximum Number of Robots Within Budget [Hard]
-
-## Round 21 Design Data Structures
-- [ ] 146. LRU Cache [Medium]
-- [ ] 705. Design HashSet [Easy]
-- [ ] 706. Design HashMap [Easy]
+## 旧 Round 21 · Design（[ ] 部分迁移至新 Round 3 + 8）
 - [x] 707. Design Linked List [Medium]
-- [ ] 380. Insert Delete GetRandom O(1) [Medium]
-- [ ] 460. LFU Cache [Hard]
-- [ ] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
-- [ ] 895. Maximum Frequency Stack [Hard]
-- [ ] 341. Flatten Nested List Iterator [Medium]
-- [ ] 173. Binary Search Tree Iterator [Medium]
-- [ ] 1381. Design a Stack With Increment Operation [Medium]
-- [ ] 622. Design Circular Queue [Medium]
-- [ ] 641. Design Circular Deque [Medium]
-- [ ] 362. Design Hit Counter [Medium]
-- [ ] 359. Logger Rate Limiter [Easy]
-- [ ] 284. Peeking Iterator
-- [ ] 362. Design Hit Counter
 
-## Round 22 Math / Bit / Simulation
-- [x] 7. Reverse Integer [Medium]
-- [x] 9. Palindrome Number [Easy]
-- [x] 12. Integer to Roman [Medium]
-- [x] 13. Roman to Integer [Easy]
-- [x] 66. Plus One [Easy]
-- [x] 67. Add Binary [Easy]
-- [x] 202. Happy Number [Easy]
-- [ ] 50. Pow(x, n) [Medium]
-- [ ] 29. Divide Two Integers [Medium]
-- [x] 8. String to Integer (atoi) [Medium]
-- [ ] 43. Multiply Strings [Medium]
-- [ ] 172. Factorial Trailing Zeroes [Medium]
-- [ ] 166. Fraction to Recurring Decimal [Medium]
-- [ ] 415. Add Strings [Easy]
-- [ ] 273. Integer to English Words [Hard]
-
-## Round 23 Advanced Array / Matrix / Sorting
-- [x] 11. Container With Most Water [Medium]
-- [x] 31. Next Permutation [Medium]
-- [ ] 41. First Missing Positive [Hard]
-- [ ] 48. Rotate Image [Medium]
-- [ ] 54. Spiral Matrix [Medium]
-- [ ] 57. Insert Interval [Medium]
-- [ ] 73. Set Matrix Zeroes [Medium]
-- [ ] 80. Remove Duplicates from Sorted Array II [Medium]
-- [ ] 86. Partition List [Medium]
-- [ ] 179. Largest Number [Medium]
-- [ ] 220. Contains Duplicate III [Hard]
-- [ ] 289. Game of Life [Medium]
-- [ ] 324. Wiggle Sort II [Medium]
-- [ ] 912. Sort an Array [Medium]
-- [ ] 973. K Closest Points to Origin [Medium]
-- [x] 75. Sort Colors [Medium]
-
-## Round 24 ByteDance 高频复刷 I
-- [ ] 15. 3Sum [Medium]
-- [ ] 31. Next Permutation [Medium]
-- [ ] 56. Merge Intervals [Medium]
-- [ ] 75. Sort Colors [Medium]
-- [ ] 76. Minimum Window Substring [Hard]
-- [ ] 146. LRU Cache [Medium]
-- [ ] 215. Kth Largest Element in an Array [Medium]
-- [ ] 236. Lowest Common Ancestor of a Binary Tree [Medium]
-- [ ] 239. Sliding Window Maximum [Hard]
-- [ ] 297. Serialize and Deserialize Binary Tree [Hard]
-- [ ] 300. Longest Increasing Subsequence [Medium]
-- [ ] 322. Coin Change [Medium]
-
-## Round 25 ByteDance 高频复刷 II
-- [x] 23. Merge k Sorted Lists [Hard]
-- [x] 25. Reverse Nodes in k-Group [Hard]
-- [x] 42. Trapping Rain Water [Hard]
-- [x] 72. Edit Distance [Medium]
-- [x] 124. Binary Tree Maximum Path Sum [Hard]
-- [x] 139. Word Break [Medium]
-- [x] 200. Number of Islands [Medium]
-- [ ] 208. Implement Trie (Prefix Tree) [Medium]
-- [ ] 253. Meeting Rooms II [Medium]
-- [ ] 295. Find Median from Data Stream [Hard]
-- [ ] 329. Longest Increasing Path in a Matrix [Hard]
-- [ ] 410. Split Array Largest Sum [Hard]
-
-## Round 26 Tencent 高频复刷
-- [ ] 1. Two Sum [Easy]
-- [ ] 3. Longest Substring Without Repeating Characters [Medium]
-- [ ] 11. Container With Most Water [Medium]
-- [ ] 20. Valid Parentheses [Easy]
-- [ ] 53. Maximum Subarray [Medium]
-- [ ] 55. Jump Game [Medium]
-- [ ] 70. Climbing Stairs [Easy]
-- [ ] 121. Best Time to Buy and Sell Stock [Easy]
-- [ ] 128. Longest Consecutive Sequence [Medium]
-- [ ] 206. Reverse Linked List [Easy]
-- [ ] 215. Kth Largest Element in an Array [Medium]
-- [ ] 300. Longest Increasing Subsequence [Medium]
-
-## Round 27 Review & Mock Practice
-- [ ] 4. Median of Two Sorted Arrays [Hard]
-- [ ] 23. Merge k Sorted Lists [Hard]
-- [ ] 25. Reverse Nodes in k-Group [Hard]
-- [ ] 42. Trapping Rain Water [Hard]
-- [ ] 72. Edit Distance [Medium]
-- [ ] 76. Minimum Window Substring [Hard]
-- [ ] 84. Largest Rectangle in Histogram [Hard]
-- [ ] 124. Binary Tree Maximum Path Sum [Hard]
-- [ ] 146. LRU Cache [Medium]
-- [ ] 212. Word Search II [Hard]
-- [ ] 239. Sliding Window Maximum [Hard]
-- [ ] 410. Split Array Largest Sum [Hard]
-
-## INFO
-- Round 1 - Round 23 为主线专题轮。
-- Round 24 - Round 27 为复刷 / 高频 / 模拟轮，`[ ]` 表示该轮复刷任务尚未完成，即使题目之前 AC 过，也需要在复刷时单独勾选。
-- 主线唯一题数 358，道复刷任务 48，总任务量 406。
-- 使用方式：平时顺着主线往下刷；每完成 2-3 个专题轮，插入 1 个复刷轮。
-- [x]表示AC，[-]表示会员题跳过，[x/r]表示AC但值得重做，[r]表示耗时太久必须重做。
-
+---
 
 ## Execution Notes
-- 每天默认 1 道主线新题。
-- 每周至少 2 次复刷：从 Round 24 - 27 中各选 1 题，或从最近 14 天错题中抽 1 题。
-- Hard 题允许拆成两天：第一天独立思考 + 编码，第二天重写 + 笔记。
+- 每天至少 1 题不断手感；编码任务轻时加 1-2 道小菜。
+- 主菜（NEW / MOCK）走完整流程：计时 → 看题 → 写代码 → 提交 → debug → AC 停时 → GPT 整理笔记（必含"主流解对照"一节）→ git。
+- 小菜（AUDIT）限时 25-35min，仅勾 `[x]` + 一行卡点，不写长笔记。
+- Hard 题主菜允许拆成两天：第一天独立思考 + 编码，第二天重写 + 笔记。
+- MOCK 题强制：限时 45min + 自造反例（不依赖 LC 测试用例 debug）+ 出声讲述。
 - 若某轮出现连续 3 题无独立思路，暂停推进，先回头补该专题模板。
+- 若 AUDIT 某专题失败率 > 30%，该组整组补审计，不要推进新专题。
 - 笔记优先级：设计题 > 图论 > 单调栈/队列 > 滑动窗口变种 > 经典 Hard。
+- 5 个月 buffer：1-2 个月留给项目准备 + 3-4 个月用于 mock 反复刷 + 弹性。
+- 春节窗口 1/28 – 2/10 默认零产出，不要骗自己。
+
+## Review 调度建议（[r] / [x/r] 题）
+
+软件 review 模式应按以下节奏穿插推进区主线：
+
+- **节奏：每 5-7 道新题穿插 1 道 review 题**，避免堆积到末期。
+- **优先级：`[r]` > `[x/r]`**（前者是耗时崩盘，后者只是值得再做）。
+- **建议时间窗：**
+  - `[r]` 共 3 道，**建议在新 Round 1-6 期间消化完**（前 3 个月）：
+    - 1203. Sort Items by Groups Respecting Dependencies（旧 R14，Hard）
+    - 752. Open the Lock（旧 R13，Medium）
+    - 316. Remove Duplicate Letters（旧 R8，Medium）
+  - `[x/r]` 共 9 道，**建议在新 Round 4-12 期间分散完成**（中段）：
+    - 442. Find All Duplicates in an Array（旧 R6）
+    - 310. Minimum Height Trees（旧 R14）
+    - 542. 01 Matrix（旧 R13）
+    - 417. Pacific Atlantic Water Flow（旧 R13）
+    - 127. Word Ladder（旧 R13）
+    - 909. Snakes and Ladders（旧 R13）
+    - 227. Basic Calculator II（旧 R8）
+    - 224. Basic Calculator（旧 R8）
+    - 1249. Minimum Remove to Make Valid Parentheses（旧 R8）
+- review 题不挤压每日主菜：review 题作为当日**小菜**（限时 30min 重写，对比旧版找改进点）。
+- 重做后通过则把标记升级为 `[x]`；仍有问题保留 `[x/r]`。
