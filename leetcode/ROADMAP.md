@@ -50,7 +50,7 @@
 附加任务：本轮完成后，把 `templates/` 下缺失的轮次模板补齐（Topological Sort / Shortest Path / MST / Linked List / Tree / Backtracking / Greedy / DP 等）。
 
 - [x/r] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
-- [ ] 1514. Path with Maximum Probability [Medium]
+- [x] 1514. Path with Maximum Probability [Medium]
 - [ ] 778. Swim in Rising Water [Hard]
 - [ ] 815. Bus Routes [Hard]
 - [ ] 1584. Min Cost to Connect All Points [Medium]
