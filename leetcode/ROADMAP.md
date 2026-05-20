@@ -53,7 +53,7 @@
 - [x] 1514. Path with Maximum Probability [Medium]
 - [ ] 778. Swim in Rising Water [Hard]
 - [ ] 815. Bus Routes [Hard]
-- [ ] 1584. Min Cost to Connect All Points [Medium]
+- [x] 1584. Min Cost to Connect All Points [Medium]
 
 # ============== Round 2 · Union-Find [Phase: NEW] ==============
 
