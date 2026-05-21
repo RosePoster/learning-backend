@@ -51,7 +51,7 @@
 
 - [x/r] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
 - [x] 1514. Path with Maximum Probability [Medium]
-- [ ] 778. Swim in Rising Water [Hard]
+- [x] 778. Swim in Rising Water [Hard]
 - [ ] 815. Bus Routes [Hard]
 - [x] 1584. Min Cost to Connect All Points [Medium]
 
