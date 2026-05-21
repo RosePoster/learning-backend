@@ -14,27 +14,26 @@
 
 | Round | 主题 | Phase | 题量 |
 |---|---|---|---|
-| 1 | Topo/Shortest Path 收官 + Templates 整理 | NEW | 5 |
-| 2 | Union-Find | NEW | 13 |
-| 3 | Design 核心 | NEW | 7 |
-| 4 | Advanced Array / Matrix | NEW | 13 |
-| 5 | R7-R12 反虚假进步审计 | AUDIT | 17 |
-| 6 | Monotonic Stack 变体 | NEW | 10 |
-| 7 | Math / Bit / Trick 补盲 | NEW | 7 |
-| 8 | Design 第二批 | NEW | 8 |
-| 9 | DP cherry-pick | NEW | 7 |
-| 10 | ByteDance 高频 I | MOCK | 12 |
-| 11 | ByteDance 高频 II 剩余 | MOCK | 5 |
-| 12 | Tencent 高频 | MOCK | 12 |
-| 13 | Hard 终局 mock | MOCK | 12 |
-| 14 | 多线程 / 并发同步 | NEW | 4 |
-| 15 | Segment Tree / BIT | NEW | 6 |
-| 16 | String 算法（KMP / Manacher / Rolling Hash）| NEW | 5 |
-| 17 | Sweep Line | NEW | 4 |
-| 18 | 博弈 DP | NEW | 4 |
-| 19 | Reservoir Sampling + Trie 深度变体 | NEW | 5 |
+| 1 | Union-Find | NEW | 13 |
+| 2 | Design 核心 | NEW | 7 |
+| 3 | Advanced Array / Matrix | NEW | 13 |
+| 4 | R7-R12 反虚假进步审计 | AUDIT | 17 |
+| 5 | Monotonic Stack 变体 | NEW | 10 |
+| 6 | Math / Bit / Trick 补盲 | NEW | 7 |
+| 7 | Design 第二批 | NEW | 8 |
+| 8 | DP cherry-pick | NEW | 7 |
+| 9 | ByteDance 高频 I | MOCK | 12 |
+| 10 | ByteDance 高频 II 剩余 | MOCK | 5 |
+| 11 | Tencent 高频 | MOCK | 12 |
+| 12 | Hard 终局 mock | MOCK | 12 |
+| 13 | 多线程 / 并发同步 | NEW | 4 |
+| 14 | Segment Tree / BIT | NEW | 6 |
+| 15 | String 算法（KMP / Manacher / Rolling Hash）| NEW | 5 |
+| 16 | Sweep Line | NEW | 4 |
+| 17 | 博弈 DP | NEW | 4 |
+| 18 | Reservoir Sampling + Trie 深度变体 | NEW | 5 |
 
-合计 **156 题**，9 个月预算充裕；剩余时间用于项目准备 + mock 反复刷。
+合计 **151 题**，9 个月预算充裕；剩余时间用于项目准备 + mock 反复刷。
 
 ### 标记说明
 - `[x]` AC
@@ -45,17 +44,7 @@
 
 ---
 
-# ============== Round 1 · Topo/Shortest Path 收官 + Templates 整理 [Phase: NEW] ==============
-
-附加任务：本轮完成后，把 `templates/` 下缺失的轮次模板补齐（Topological Sort / Shortest Path / MST / Linked List / Tree / Backtracking / Greedy / DP 等）。
-
-- [x/r] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
-- [x] 1514. Path with Maximum Probability [Medium]
-- [x] 778. Swim in Rising Water [Hard]
-- [ ] 815. Bus Routes [Hard]
-- [x] 1584. Min Cost to Connect All Points [Medium]
-
-# ============== Round 2 · Union-Find [Phase: NEW] ==============
+# ============== Round 1 · Union-Find [Phase: NEW] ==============
 
 - [ ] 547. Number of Provinces [Medium]
 - [ ] 990. Satisfiability of Equality Equations [Medium]
@@ -71,7 +60,7 @@
 - [ ] 839. Similar String Groups [Hard]
 - [ ] 1135. Connecting Cities With Minimum Cost [Medium]
 
-# ============== Round 3 · Design 核心 [Phase: NEW] ==============
+# ============== Round 2 · Design 核心 [Phase: NEW] ==============
 
 字节 / 阿里 / Meta 一面 No.1 命中区。LRU 要做到 5min 内手撸 doubly-linked + HashMap。
 
@@ -83,7 +72,7 @@
 - [ ] 173. Binary Search Tree Iterator [Medium]
 - [ ] 622. Design Circular Queue [Medium]
 
-# ============== Round 4 · Advanced Array / Matrix [Phase: NEW] ==============
+# ============== Round 3 · Advanced Array / Matrix [Phase: NEW] ==============
 
 国内大厂一面命中率最高。
 
@@ -101,7 +90,7 @@
 - [ ] 912. Sort an Array [Medium]
 - [ ] 973. K Closest Points to Origin [Medium]
 
-# ============== Round 5 · R7-R12 反虚假进步审计 [Phase: AUDIT] ==============
+# ============== Round 4 · R7-R12 反虚假进步审计 [Phase: AUDIT] ==============
 
 题目已在旧 Round 标 `[x]`，本轮作为独立审计任务用 `[ ]` 起步：
 - 简单题限时 25min，中等 35min，Hard 50min
@@ -128,7 +117,7 @@
 - [ ] 56. Merge Intervals [Medium]（R12）
 - [ ] 230. Kth Smallest Element in a BST [Medium]（R10，原未刷，字节高频）
 
-# ============== Round 6 · Monotonic Stack 变体 [Phase: NEW] ==============
+# ============== Round 5 · Monotonic Stack 变体 [Phase: NEW] ==============
 
 已过模板题（42/84/239），本轮补变体辨识能力。
 
@@ -143,7 +132,7 @@
 - [ ] 1673. Find the Most Competitive Subsequence [Medium]
 - [ ] 2398. Maximum Number of Robots Within Budget [Hard]
 
-# ============== Round 7 · Math / Bit / Trick 补盲 [Phase: NEW] ==============
+# ============== Round 6 · Math / Bit / Trick 补盲 [Phase: NEW] ==============
 
 补 421 暴露过的位运算盲区。
 
@@ -155,7 +144,7 @@
 - [ ] 415. Add Strings [Easy]
 - [ ] 273. Integer to English Words [Hard]
 
-# ============== Round 8 · Design 第二批 [Phase: NEW] ==============
+# ============== Round 7 · Design 第二批 [Phase: NEW] ==============
 
 - [ ] 895. Maximum Frequency Stack [Hard]
 - [ ] 341. Flatten Nested List Iterator [Medium]
@@ -166,11 +155,11 @@
 - [ ] 284. Peeking Iterator [Medium]
 - [ ] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
 
-# ============== Round 9 · DP cherry-pick [Phase: NEW] ==============
+# ============== Round 8 · DP cherry-pick [Phase: NEW] ==============
 
 DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展。
 
-- [ ] 221. Maximal Square [Medium]（R16 唯一未做）
+- [ ] 221. Maximal Square [Medium]（旧 R16 唯一未做）
 - [ ] 97. Interleaving String [Medium]
 - [ ] 10. Regular Expression Matching [Hard]
 - [ ] 44. Wildcard Matching [Hard]
@@ -178,7 +167,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 329. Longest Increasing Path in a Matrix [Hard]
 - [ ] 403. Frog Jump [Hard]
 
-# ============== Round 10 · ByteDance 高频 I [Phase: MOCK] ==============
+# ============== Round 9 · ByteDance 高频 I [Phase: MOCK] ==============
 
 题目大多在主线已 `[x]`，本轮 mock 模式独立重做（白板限时 45min）。
 
@@ -195,7 +184,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 300. Longest Increasing Subsequence [Medium]
 - [ ] 322. Coin Change [Medium]
 
-# ============== Round 11 · ByteDance 高频 II 剩余 [Phase: MOCK] ==============
+# ============== Round 10 · ByteDance 高频 II 剩余 [Phase: MOCK] ==============
 
 - [ ] 208. Implement Trie (Prefix Tree) [Medium]
 - [ ] 253. Meeting Rooms II [Medium]
@@ -203,7 +192,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 329. Longest Increasing Path in a Matrix [Hard]
 - [ ] 410. Split Array Largest Sum [Hard]
 
-# ============== Round 12 · Tencent 高频 [Phase: MOCK] ==============
+# ============== Round 11 · Tencent 高频 [Phase: MOCK] ==============
 
 - [ ] 1. Two Sum [Easy]
 - [ ] 3. Longest Substring Without Repeating Characters [Medium]
@@ -218,7 +207,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 215. Kth Largest Element in an Array [Medium]
 - [ ] 300. Longest Increasing Subsequence [Medium]
 
-# ============== Round 13 · Hard 终局 mock [Phase: MOCK] ==============
+# ============== Round 12 · Hard 终局 mock [Phase: MOCK] ==============
 
 临考冲刺，每周 2 道完整 mock。
 
@@ -235,7 +224,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 239. Sliding Window Maximum [Hard]
 - [ ] 410. Split Array Largest Sum [Hard]
 
-# ============== Round 14 · 多线程 / 并发同步 [Phase: NEW] ==============
+# ============== Round 13 · 多线程 / 并发同步 [Phase: NEW] ==============
 
 Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
 
@@ -244,7 +233,7 @@ Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
 - [ ] 1116. Print Zero Even Odd [Medium]
 - [ ] 1117. Building H2O [Medium]
 
-# ============== Round 15 · Segment Tree / BIT [Phase: NEW] ==============
+# ============== Round 14 · Segment Tree / BIT [Phase: NEW] ==============
 
 中后期面试分水岭题，公理推导型有优势。
 
@@ -255,7 +244,7 @@ Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
 - [ ] 493. Reverse Pairs [Hard]
 - [ ] 218. The Skyline Problem [Hard]
 
-# ============== Round 16 · String 算法 [Phase: NEW] ==============
+# ============== Round 15 · String 算法 [Phase: NEW] ==============
 
 KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
 
@@ -265,7 +254,7 @@ KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
 - [ ] 686. Repeated String Match [Medium]
 - [ ] 1392. Longest Happy Prefix [Hard]
 
-# ============== Round 17 · Sweep Line [Phase: NEW] ==============
+# ============== Round 16 · Sweep Line [Phase: NEW] ==============
 
 区间问题进阶，中后台 / 排程类系统设计的算法底座。
 
@@ -274,7 +263,7 @@ KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
 - [ ] 731. My Calendar II [Medium]
 - [ ] 732. My Calendar III [Hard]
 
-# ============== Round 18 · 博弈 DP [Phase: NEW] ==============
+# ============== Round 17 · 博弈 DP [Phase: NEW] ==============
 
 DP 的反向思考分支，Meta / 字节有时出。
 
@@ -283,7 +272,7 @@ DP 的反向思考分支，Meta / 字节有时出。
 - [ ] 464. Can I Win [Medium]
 - [ ] 1140. Stone Game II [Medium]
 
-# ============== Round 19 · Reservoir Sampling + Trie 深度变体 [Phase: NEW] ==============
+# ============== Round 18 · Reservoir Sampling + Trie 深度变体 [Phase: NEW] ==============
 
 AI 应用 / 推荐系统 / 搜索建议的算法基础。
 
@@ -292,6 +281,24 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [ ] 472. Concatenated Words [Hard]
 - [ ] 642. Design Search Autocomplete System [Hard]
 - [ ] 1268. Search Suggestions System [Medium]
+
+# ============== Round 19 · Review & Re-attempt [Phase: AUDIT/REVIEW] ==============
+
+所有标记为 [r]（耗时崩盘）与 [x/r]（值得重做）的题目集合，穿插于前面各轮中间完成。
+
+- [ ] 224. Basic Calculator [x/r]（旧 R8）
+- [ ] 227. Basic Calculator II [x/r]（旧 R8）
+- [ ] 316. Remove Duplicate Letters [r]（旧 R8）
+- [ ] 417. Pacific Atlantic Water Flow [x/r]（旧 R13）
+- [ ] 442. Find All Duplicates in an Array [x/r]（旧 R6）
+- [ ] 542. 01 Matrix [x/r]（旧 R13）
+- [ ] 752. Open the Lock [r]（旧 R13）
+- [ ] 909. Snakes and Ladders [x/r]（旧 R13）
+- [ ] 1203. Sort Items by Groups Respecting Dependencies [r]（旧 R14）
+- [ ] 1249. Minimum Remove to Make Valid Parentheses [x/r]（旧 R8）
+- [ ] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [x/r]（旧 R14）
+- [ ] 127. Word Ladder [x/r]（旧 R13）
+- [ ] 310. Minimum Height Trees [x/r]（旧 R14）
 
 ---
 
@@ -520,7 +527,7 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [-] 286. Walls and Gates [Medium]
 - [x] 1926. Nearest Exit from Entrance in Maze [Medium]
 
-## 旧 Round 14 · Topological Sort / Shortest Path / MST（[ ] 部分迁移至新 Round 1）
+## 旧 Round 14 · Topological Sort / Shortest Path / MST
 - [x] 207. Course Schedule [Medium]
 - [x] 210. Course Schedule II [Medium]
 - [x] 743. Network Delay Time [Medium]
@@ -533,8 +540,13 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [x] 787. Cheapest Flights Within K Stops [Medium]
 - [x] 1368. Minimum Cost to Make at Least One Valid Path in a Grid [Hard]
 - [x] 1631. Path With Minimum Effort [Medium]
+- [x/r] 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance [Medium]
+- [x] 1514. Path with Maximum Probability [Medium]
+- [x] 778. Swim in Rising Water [Hard]
+- [r] 815. Bus Routes [Hard]
+- [x] 1584. Min Cost to Connect All Points [Medium]
 
-## 旧 Round 16 · DP - Linear（[ ] 221 迁移至新 Round 9）
+## 旧 Round 16 · DP - Linear（[ ] 221 迁移至新 Round 8）
 - [x] 53. Maximum Subarray [Medium]
 - [x] 70. Climbing Stairs [Easy]
 - [x] 62. Unique Paths [Medium]
@@ -567,7 +579,7 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [x] 377. Combination Sum IV [Medium]
 - [x] 343. Integer Break [Medium]
 
-## 旧 Round 18 · DP - String（部分 [ ] 迁移至新 Round 9，剩余 712/1092/1312 优先级低）
+## 旧 Round 18 · DP - String（部分 [ ] 迁移至新 Round 8，剩余 712/1092/1312 优先级低）
 - [x] 1143. Longest Common Subsequence [Medium]
 - [x] 72. Edit Distance [Medium]
 - [x] 583. Delete Operation for Two Strings [Medium]
@@ -578,12 +590,12 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [x] 647. Palindromic Substrings [Medium]
 - [x] 5. Longest Palindromic Substring [Medium]
 
-## 旧 Round 19 · DP - Memoization / Advanced（部分 [ ] 迁移至新 Round 9，其余优先级低）
+## 旧 Round 19 · DP - Memoization / Advanced（部分 [ ] 迁移至新 Round 8，其余优先级低）
 - [x] 96. Unique Binary Search Trees [Medium]
 - [x] 95. Unique Binary Search Trees II [Medium]
 - [x] 139. Word Break [Medium]
 
-## 旧 Round 21 · Design（[ ] 部分迁移至新 Round 3 + 8）
+## 旧 Round 21 · Design（[ ] 部分迁移至新 Round 2 + 7）
 - [x] 707. Design Linked List [Medium]
 
 ---
@@ -599,6 +611,7 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - 笔记优先级：设计题 > 图论 > 单调栈/队列 > 滑动窗口变种 > 经典 Hard。
 - 5 个月 buffer：1-2 个月留给项目准备 + 3-4 个月用于 mock 反复刷 + 弹性。
 - 春节窗口 1/28 – 2/10 默认零产出，不要骗自己。
+- **笔记目录约定：每个 round 目录下用 `note.md` 写本轮专题总结（不再有中心化 `templates/` 目录）。已完成的旧 Round 在 `legacy/<专题>/` 下，整体 insight 笔记也放在该目录的 `note.md`。**
 
 ## Review 调度建议（[r] / [x/r] 题）
 
@@ -607,13 +620,14 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - **节奏：每 5-7 道新题穿插 1 道 review 题**，避免堆积到末期。
 - **优先级：`[r]` > `[x/r]`**（前者是耗时崩盘，后者只是值得再做）。
 - **建议时间窗：**
-  - `[r]` 共 3 道，**建议在新 Round 1-6 期间消化完**（前 3 个月）：
+  - `[r]` 共 3 道，**建议在新 Round 1-5 期间消化完**（前 3 个月）：
     - 1203. Sort Items by Groups Respecting Dependencies（旧 R14，Hard）
     - 752. Open the Lock（旧 R13，Medium）
     - 316. Remove Duplicate Letters（旧 R8，Medium）
-  - `[x/r]` 共 9 道，**建议在新 Round 4-12 期间分散完成**（中段）：
+  - `[x/r]` 共 10 道，**建议在新 Round 3-11 期间分散完成**（中段）：
     - 442. Find All Duplicates in an Array（旧 R6）
     - 310. Minimum Height Trees（旧 R14）
+    - 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance（旧 R14）
     - 542. 01 Matrix（旧 R13）
     - 417. Pacific Atlantic Water Flow（旧 R13）
     - 127. Word Ladder（旧 R13）
