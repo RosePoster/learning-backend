@@ -47,7 +47,7 @@
 # ============== Round 1 · Union-Find [Phase: NEW] ==============
 
 - [x] 547. Number of Provinces [Medium]
-- [ ] 990. Satisfiability of Equality Equations [Medium]
+- [x/r] 990. Satisfiability of Equality Equations [Medium]
 - [ ] 1971. Find if Path Exists in Graph [Easy]
 - [ ] 685. Redundant Connection II [Hard]
 - [ ] 399. Evaluate Division [Medium]
