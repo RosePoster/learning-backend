@@ -50,7 +50,7 @@
 - [x/r] 990. Satisfiability of Equality Equations [Medium]
 - [ ] 1971. Find if Path Exists in Graph [Easy]
 - [ ] 685. Redundant Connection II [Hard]
-- [ ] 399. Evaluate Division [Medium]
+- [x] 399. Evaluate Division [Medium]
 - [ ] 721. Accounts Merge [Medium]
 - [ ] 1319. Number of Operations to Make Network Connected [Medium]
 - [ ] 1202. Smallest String With Swaps [Medium]
