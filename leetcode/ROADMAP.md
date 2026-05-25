@@ -51,7 +51,7 @@
 - [ ] 1971. Find if Path Exists in Graph [Easy]
 - [ ] 685. Redundant Connection II [Hard]
 - [x] 399. Evaluate Division [Medium]
-- [ ] 721. Accounts Merge [Medium]
+- [r] 721. Accounts Merge [Medium]
 - [ ] 1319. Number of Operations to Make Network Connected [Medium]
 - [ ] 1202. Smallest String With Swaps [Medium]
 - [ ] 959. Regions Cut By Slashes [Medium]
