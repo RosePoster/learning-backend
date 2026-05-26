@@ -52,7 +52,7 @@
 - [ ] 685. Redundant Connection II [Hard]
 - [x] 399. Evaluate Division [Medium]
 - [r] 721. Accounts Merge [Medium]
-- [ ] 1319. Number of Operations to Make Network Connected [Medium]
+- [x] 1319. Number of Operations to Make Network Connected [Medium]
 - [ ] 1202. Smallest String With Swaps [Medium]
 - [ ] 959. Regions Cut By Slashes [Medium]
 - [ ] 305. Number of Islands II [Hard]
