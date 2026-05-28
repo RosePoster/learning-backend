@@ -49,7 +49,7 @@
 - [x] 547. Number of Provinces [Medium]
 - [x/r] 990. Satisfiability of Equality Equations [Medium]
 - [ ] 1971. Find if Path Exists in Graph [Easy]
-- [ ] 685. Redundant Connection II [Hard]
+- [x/r] 685. Redundant Connection II [Hard]
 - [x] 399. Evaluate Division [Medium]
 - [r] 721. Accounts Merge [Medium]
 - [x] 1319. Number of Operations to Make Network Connected [Medium]
