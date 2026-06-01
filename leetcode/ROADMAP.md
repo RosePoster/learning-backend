@@ -57,9 +57,12 @@
 - [x/r] 959. Regions Cut By Slashes [Medium]
 - [-] 305. Number of Islands II [Hard]
 - [x] 827. Making A Large Island [Hard]
-- [ ] 323. Number of Connected Components in an Undirected Graph [Medium]
+- [-] 323. Number of Connected Components in an Undirected Graph [Medium]
 - [x] 839. Similar String Groups [Hard]
-- [ ] 1135. Connecting Cities With Minimum Cost [Medium]
+- [-] 1135. Connecting Cities With Minimum Cost [Medium]
+- [x] 2685. Count the Number of Complete Components [Medium]
+- [ ] 1584. Min Cost to Connect All Points [Medium]
+- [ ] 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree [Hard]
 
 # ============== Round 2 · Design 核心 [Phase: NEW] ==============
 
