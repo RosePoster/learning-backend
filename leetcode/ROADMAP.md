@@ -58,7 +58,7 @@
 - [-] 305. Number of Islands II [Hard]
 - [x] 827. Making A Large Island [Hard]
 - [ ] 323. Number of Connected Components in an Undirected Graph [Medium]
-- [ ] 839. Similar String Groups [Hard]
+- [x] 839. Similar String Groups [Hard]
 - [ ] 1135. Connecting Cities With Minimum Cost [Medium]
 
 # ============== Round 2 · Design 核心 [Phase: NEW] ==============
