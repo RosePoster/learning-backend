@@ -62,7 +62,7 @@
 - [-] 1135. Connecting Cities With Minimum Cost [Medium]
 - [x] 2685. Count the Number of Complete Components [Medium]
 - [ ] 1584. Min Cost to Connect All Points [Medium]
-- [ ] 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree [Hard]
+- [r] 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree [Hard]
 
 # ============== Round 2 · Design 核心 [Phase: NEW] ==============
 
