@@ -61,7 +61,6 @@
 - [x] 839. Similar String Groups [Hard]
 - [-] 1135. Connecting Cities With Minimum Cost [Medium]
 - [x] 2685. Count the Number of Complete Components [Medium]
-- [ ] 1584. Min Cost to Connect All Points [Medium]
 - [r] 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree [Hard]
 
 # ============== Round 2 · Design 核心 [Phase: NEW] ==============
@@ -71,7 +70,7 @@
 - [ ] 146. LRU Cache [Medium]
 - [ ] 460. LFU Cache [Hard]
 - [ ] 380. Insert Delete GetRandom O(1) [Medium]
-- [ ] 705. Design HashSet [Easy]
+- [x] 705. Design HashSet [Easy]
 - [ ] 706. Design HashMap [Easy]
 - [ ] 173. Binary Search Tree Iterator [Medium]
 - [ ] 622. Design Circular Queue [Medium]
