@@ -67,7 +67,7 @@
 
 字节 / 阿里 / Meta 一面 No.1 命中区。LRU 要做到 5min 内手撸 doubly-linked + HashMap。
 
-- [ ] 146. LRU Cache [Medium]
+- [x/r] 146. LRU Cache [Medium]
 - [ ] 460. LFU Cache [Hard]
 - [ ] 380. Insert Delete GetRandom O(1) [Medium]
 - [x] 705. Design HashSet [Easy]
