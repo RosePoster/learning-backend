@@ -69,7 +69,7 @@
 
 - [x/r] 146. LRU Cache [Medium]
 - [ ] 460. LFU Cache [Hard]
-- [ ] 380. Insert Delete GetRandom O(1) [Medium]
+- [x/r] 380. Insert Delete GetRandom O(1) [Medium]
 - [x] 705. Design HashSet [Easy]
 - [ ] 706. Design HashMap [Easy]
 - [ ] 173. Binary Search Tree Iterator [Medium]
