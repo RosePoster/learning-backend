@@ -1,14 +1,16 @@
 # LeetCode Roadmap
 
-## 执行计划（2026-05-18 → 2027-02-15，9 个月）
+## 执行计划（2026-05-18 → 2027-04，投递期 2027-02 ~ 04）
 
 节奏：**每天至少 1 题不断手感**，编码任务轻时加 1-2 道小菜。
 推进顺序：从上往下扫第一个 `[ ]`。Round 越靠前越重要。
+**时间锚点**：主线（R1-17）在 2027-02 投递前收完；R18 终局 mock + wrong-list 维护贴着投递面试期（2027-02 ~ 04）推进。
 
-### 三个 Phase
+### 四个 Phase
 - **NEW** — 新题。完整流程（计时 → 思考 → 编码 → AC → GPT 整理笔记（含主流解对照）→ git）。1 道为主菜。
 - **AUDIT** — 反虚假进步审计。题目已在旧 Round AC，本轮独立白板限时复盘（简单 25min / 中等 35min），出声讲，不查 API，跑反例。失败率 > 30% 时该组扩大审计。
 - **MOCK** — 面试模拟。45min 硬截止 + 自造反例（不依赖 LC 测试用例 debug）+ 出声讲（题意复述 / 朴素解 / 优化方向 / 不变量 / 复杂度 / 反例）。
+- **UNSEEN** — 陌生题迁移训练（不计入题量，按节奏穿插）。从 Round 5 起**每 1-2 周一场**：LC 周赛，或从字节/腾讯公司 tag 随机抽 1 道**从未做过**的题，按 MOCK 标准执行。MOCK 测记忆稳定性，UNSEEN 测迁移能力，二者不可互替。
 
 ### Phase 推进总览
 
@@ -17,23 +19,23 @@
 | 1 | Union-Find | NEW | 13 |
 | 2 | Design 核心 | NEW | 7 |
 | 3 | Advanced Array / Matrix | NEW | 13 |
-| 4 | R7-R12 反虚假进步审计 | AUDIT | 17 |
+| 4 | 旧轮反虚假进步审计（R1-R12）| AUDIT | 24 |
 | 5 | Monotonic Stack 变体 | NEW | 10 |
-| 6 | Math / Bit / Trick 补盲 | NEW | 7 |
+| 6 | Math / Bit / Trick 补盲 | NEW | 9 |
 | 7 | Design 第二批 | NEW | 8 |
 | 8 | DP cherry-pick | NEW | 7 |
 | 9 | ByteDance 高频 I | MOCK | 12 |
 | 10 | ByteDance 高频 II 剩余 | MOCK | 5 |
-| 11 | Tencent 高频 | MOCK | 12 |
-| 12 | Hard 终局 mock | MOCK | 12 |
-| 13 | 多线程 / 并发同步 | NEW | 4 |
-| 14 | Segment Tree / BIT | NEW | 6 |
-| 15 | String 算法（KMP / Manacher / Rolling Hash）| NEW | 5 |
-| 16 | Sweep Line | NEW | 4 |
-| 17 | 博弈 DP | NEW | 4 |
-| 18 | Reservoir Sampling + Trie 深度变体 | NEW | 5 |
+| 11 | Tencent 高频 | MOCK | 8 |
+| 12 | 多线程 / 并发同步 | NEW | 4 |
+| 13 | Segment Tree / BIT | NEW | 6 |
+| 14 | String 算法（KMP / Manacher / Rolling Hash）| NEW | 5 |
+| 15 | Sweep Line | NEW | 4 |
+| 16 | 博弈 DP | NEW | 4 |
+| 17 | Reservoir Sampling + 概率 + Trie 深度变体 | NEW | 6 |
+| 18 | Hard 终局 mock（贴投递面试期）| MOCK | 12 |
 
-合计 **151 题**，9 个月预算充裕；剩余时间用于项目准备 + mock 反复刷。
+合计 **157 题**（UNSEEN 场次另计），预算充裕；投递期 2027-02 ~ 04 之前收完主线，剩余时间用于项目准备 + 终局 mock + wrong-list 反复刷。
 
 ### 标记说明
 - `[x]` AC
@@ -68,7 +70,7 @@
 字节 / 阿里 / Meta 一面 No.1 命中区。LRU 要做到 5min 内手撸 doubly-linked + HashMap。
 
 - [x/r] 146. LRU Cache [Medium]
-- [ ] 460. LFU Cache [Hard]
+- [r] 460. LFU Cache [Hard]
 - [x/r] 380. Insert Delete GetRandom O(1) [Medium]
 - [x] 705. Design HashSet [Easy]
 - [ ] 706. Design HashMap [Easy]
@@ -93,14 +95,27 @@
 - [ ] 912. Sort an Array [Medium]
 - [ ] 973. K Closest Points to Origin [Medium]
 
-# ============== Round 4 · R7-R12 反虚假进步审计 [Phase: AUDIT] ==============
+# ============== Round 4 · 旧轮反虚假进步审计（R1-R12）[Phase: AUDIT] ==============
 
 题目已在旧 Round 标 `[x]`，本轮作为独立审计任务用 `[ ]` 起步：
 - 简单题限时 25min，中等 35min，Hard 50min
 - 出声讲：题意复述 / 朴素解 / 不变量 / 复杂度 / 反例
 - 不查 Java API，不依赖 LC 测试用例 debug
 - 审计通过标 `[x]`；卡时标 `[x/r]`；崩盘标 `[r]`
-- **某专题（R7/R9/R10/R11/R12）若失败率 > 30%，该组其余未列题目补审计**
+- **某专题若失败率 > 30%，该组其余未列题目补审计**
+- 旧 R1-R6（二分/前缀和/堆/滑窗/双指针）完成最早、衰减最重，抽审 7 道兜底
+
+旧 R1-R6 抽审（衰减最重的早期专题）：
+
+- [ ] 33. Search in Rotated Sorted Array [Medium]（R1，字节高频）
+- [ ] 153. Find Minimum in Rotated Sorted Array [Medium]（R1）
+- [ ] 162. Find Peak Element [Medium]（R1）
+- [ ] 560. Subarray Sum Equals K [Medium]（R2，字节高频）
+- [ ] 347. Top K Frequent Elements [Medium]（R3）
+- [ ] 424. Longest Repeating Character Replacement [Medium]（R5）
+- [ ] 287. Find the Duplicate Number [Medium]（R1，二分 + 快慢指针双解都要讲）
+
+旧 R7-R12 审计：
 
 - [ ] 297. Serialize and Deserialize Binary Tree [Hard]（R9）
 - [ ] 236. Lowest Common Ancestor of a Binary Tree [Medium]（R10）
@@ -137,7 +152,7 @@
 
 # ============== Round 6 · Math / Bit / Trick 补盲 [Phase: NEW] ==============
 
-补 421 暴露过的位运算盲区。
+补 421 暴露过的位运算盲区 + 字节字符串模拟高频。
 
 - [ ] 50. Pow(x, n) [Medium]
 - [ ] 29. Divide Two Integers [Medium]
@@ -146,6 +161,8 @@
 - [ ] 166. Fraction to Recurring Decimal [Medium]
 - [ ] 415. Add Strings [Easy]
 - [ ] 273. Integer to English Words [Hard]
+- [ ] 8. String to Integer (atoi) [Medium]（字节字符串模拟高频，边界陷阱密集）
+- [ ] 165. Compare Version Numbers [Medium]（字节高频）
 
 # ============== Round 7 · Design 第二批 [Phase: NEW] ==============
 
@@ -197,22 +214,79 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 
 # ============== Round 11 · Tencent 高频 [Phase: MOCK] ==============
 
-- [ ] 1. Two Sum [Easy]
+已压缩：删去 1/20/70/121 四道边际价值过低的 Easy（多轮覆盖 + 不可能挂），省出时间给 UNSEEN 场次。
+
 - [ ] 3. Longest Substring Without Repeating Characters [Medium]
 - [ ] 11. Container With Most Water [Medium]
-- [ ] 20. Valid Parentheses [Easy]
 - [ ] 53. Maximum Subarray [Medium]
 - [ ] 55. Jump Game [Medium]
-- [ ] 70. Climbing Stairs [Easy]
-- [ ] 121. Best Time to Buy and Sell Stock [Easy]
 - [ ] 128. Longest Consecutive Sequence [Medium]
-- [ ] 206. Reverse Linked List [Easy]
+- [ ] 206. Reverse Linked List [Easy]（5min 极限标准）
 - [ ] 215. Kth Largest Element in an Array [Medium]
 - [ ] 300. Longest Increasing Subsequence [Medium]
 
-# ============== Round 12 · Hard 终局 mock [Phase: MOCK] ==============
+# ============== Round 12 · 多线程 / 并发同步 [Phase: NEW] ==============
 
-临考冲刺，每周 2 道完整 mock。
+Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
+
+- [ ] 1114. Print in Order [Easy]
+- [ ] 1115. Print FooBar Alternately [Medium]
+- [ ] 1116. Print Zero Even Odd [Medium]
+- [ ] 1117. Building H2O [Medium]
+
+# ============== Round 13 · Segment Tree / BIT [Phase: NEW] ==============
+
+中后期面试分水岭题，公理推导型有优势。
+
+- [ ] 307. Range Sum Query - Mutable [Medium]
+- [ ] 308. Range Sum Query 2D - Mutable [Hard]
+- [ ] 315. Count of Smaller Numbers After Self [Hard]
+- [ ] 327. Count of Range Sum [Hard]
+- [ ] 493. Reverse Pairs [Hard]
+- [ ] 218. The Skyline Problem [Hard]
+
+# ============== Round 14 · String 算法 [Phase: NEW] ==============
+
+KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
+
+- [ ] 28. Find the Index of the First Occurrence in a String [Easy]
+- [ ] 214. Shortest Palindrome [Hard]
+- [ ] 459. Repeated Substring Pattern [Easy]
+- [ ] 686. Repeated String Match [Medium]
+- [ ] 1392. Longest Happy Prefix [Hard]
+
+# ============== Round 15 · Sweep Line [Phase: NEW] ==============
+
+区间问题进阶，中后台 / 排程类系统设计的算法底座。
+
+- [ ] 1235. Maximum Profit in Job Scheduling [Hard]
+- [ ] 729. My Calendar I [Medium]
+- [ ] 731. My Calendar II [Medium]
+- [ ] 732. My Calendar III [Hard]
+
+# ============== Round 16 · 博弈 DP [Phase: NEW] ==============
+
+DP 的反向思考分支，Meta / 字节有时出。
+
+- [ ] 877. Stone Game [Medium]
+- [ ] 486. Predict the Winner [Medium]
+- [ ] 464. Can I Win [Medium]
+- [ ] 1140. Stone Game II [Medium]
+
+# ============== Round 17 · Reservoir Sampling + 概率 + Trie 深度变体 [Phase: NEW] ==============
+
+AI 应用 / 推荐系统 / 搜索建议的算法基础。
+
+- [ ] 382. Linked List Random Node [Medium]
+- [ ] 398. Random Pick Index [Medium]
+- [ ] 470. Implement Rand10() Using Rand7() [Medium]（字节/腾讯概率题常客，拒绝采样）
+- [ ] 472. Concatenated Words [Hard]
+- [ ] 642. Design Search Autocomplete System [Hard]
+- [ ] 1268. Search Suggestions System [Medium]
+
+# ============== Round 18 · Hard 终局 mock [Phase: MOCK] ==============
+
+**贴着投递面试期（2027-02 ~ 04）推进**，每周 2 道完整 mock，与 wrong-list 维护、UNSEEN 场次并行。
 
 - [ ] 4. Median of Two Sorted Arrays [Hard]
 - [ ] 23. Merge k Sorted Lists [Hard]
@@ -226,64 +300,6 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 212. Word Search II [Hard]
 - [ ] 239. Sliding Window Maximum [Hard]
 - [ ] 410. Split Array Largest Sum [Hard]
-
-# ============== Round 13 · 多线程 / 并发同步 [Phase: NEW] ==============
-
-Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
-
-- [ ] 1114. Print in Order [Easy]
-- [ ] 1115. Print FooBar Alternately [Medium]
-- [ ] 1116. Print Zero Even Odd [Medium]
-- [ ] 1117. Building H2O [Medium]
-
-# ============== Round 14 · Segment Tree / BIT [Phase: NEW] ==============
-
-中后期面试分水岭题，公理推导型有优势。
-
-- [ ] 307. Range Sum Query - Mutable [Medium]
-- [ ] 308. Range Sum Query 2D - Mutable [Hard]
-- [ ] 315. Count of Smaller Numbers After Self [Hard]
-- [ ] 327. Count of Range Sum [Hard]
-- [ ] 493. Reverse Pairs [Hard]
-- [ ] 218. The Skyline Problem [Hard]
-
-# ============== Round 15 · String 算法 [Phase: NEW] ==============
-
-KMP / Manacher / Rolling Hash，顺带训 Java String API 肌肉记忆。
-
-- [ ] 28. Find the Index of the First Occurrence in a String [Easy]
-- [ ] 214. Shortest Palindrome [Hard]
-- [ ] 459. Repeated Substring Pattern [Easy]
-- [ ] 686. Repeated String Match [Medium]
-- [ ] 1392. Longest Happy Prefix [Hard]
-
-# ============== Round 16 · Sweep Line [Phase: NEW] ==============
-
-区间问题进阶，中后台 / 排程类系统设计的算法底座。
-
-- [ ] 1235. Maximum Profit in Job Scheduling [Hard]
-- [ ] 729. My Calendar I [Medium]
-- [ ] 731. My Calendar II [Medium]
-- [ ] 732. My Calendar III [Hard]
-
-# ============== Round 17 · 博弈 DP [Phase: NEW] ==============
-
-DP 的反向思考分支，Meta / 字节有时出。
-
-- [ ] 877. Stone Game [Medium]
-- [ ] 486. Predict the Winner [Medium]
-- [ ] 464. Can I Win [Medium]
-- [ ] 1140. Stone Game II [Medium]
-
-# ============== Round 18 · Reservoir Sampling + Trie 深度变体 [Phase: NEW] ==============
-
-AI 应用 / 推荐系统 / 搜索建议的算法基础。
-
-- [ ] 382. Linked List Random Node [Medium]
-- [ ] 398. Random Pick Index [Medium]
-- [ ] 472. Concatenated Words [Hard]
-- [ ] 642. Design Search Autocomplete System [Hard]
-- [ ] 1268. Search Suggestions System [Medium]
 
 # ============== Round 19 · Review & Re-attempt [Phase: AUDIT/REVIEW] ==============
 
@@ -609,10 +625,12 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - 小菜（AUDIT）限时 25-35min，仅勾 `[x]` + 一行卡点，不写长笔记。
 - Hard 题主菜允许拆成两天：第一天独立思考 + 编码，第二天重写 + 笔记。
 - MOCK 题强制：限时 45min + 自造反例（不依赖 LC 测试用例 debug）+ 出声讲述。
+- **UNSEEN 场次（从 Round 5 起）：每 1-2 周 1 场，LC 周赛或公司 tag 随机抽未做过的题，45min 硬截止，按 MOCK 标准执行。失败不补做整轮，但记录暴露的专题盲区，反馈给对应 Round。**
+- **ACM 笔试模式：2027-01 起加 2-3 次牛客 ACM 模式套卷（自行处理输入输出、4 题限时），消除字节笔试 IO 形态的陌生感。**
 - 若某轮出现连续 3 题无独立思路，暂停推进，先回头补该专题模板。
 - 若 AUDIT 某专题失败率 > 30%，该组整组补审计，不要推进新专题。
 - 笔记优先级：设计题 > 图论 > 单调栈/队列 > 滑动窗口变种 > 经典 Hard。
-- 5 个月 buffer：1-2 个月留给项目准备 + 3-4 个月用于 mock 反复刷 + 弹性。
+- buffer 充裕（投递期 2027-02 ~ 04 才开始）：1-2 个月留给项目准备，其余用于 R18 终局 mock + UNSEEN + wrong-list 反复刷 + 弹性。
 - 春节窗口 1/28 – 2/10 默认零产出，不要骗自己。
 - **笔记目录约定：每个 round 目录下用 `note.md` 写本轮专题总结（不再有中心化 `templates/` 目录）。已完成的旧 Round 在 `legacy/<专题>/` 下，整体 insight 笔记也放在该目录的 `note.md`。**
 
