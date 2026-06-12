@@ -73,7 +73,7 @@
 - [r] 460. LFU Cache [Hard]
 - [x/r] 380. Insert Delete GetRandom O(1) [Medium]
 - [x] 705. Design HashSet [Easy]
-- [ ] 706. Design HashMap [Easy]
+- [x] 706. Design HashMap [Easy]
 - [x] 173. Binary Search Tree Iterator [Medium]
 - [x] 622. Design Circular Queue [Medium]
 
