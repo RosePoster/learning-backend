@@ -75,7 +75,7 @@
 - [x] 705. Design HashSet [Easy]
 - [ ] 706. Design HashMap [Easy]
 - [x] 173. Binary Search Tree Iterator [Medium]
-- [ ] 622. Design Circular Queue [Medium]
+- [x] 622. Design Circular Queue [Medium]
 
 # ============== Round 3 · Advanced Array / Matrix [Phase: NEW] ==============
 
