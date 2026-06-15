@@ -84,7 +84,7 @@
 - [ ] 41. First Missing Positive [Hard]
 - [x] 48. Rotate Image [Medium]
 - [r] 54. Spiral Matrix [Medium]
-- [ ] 57. Insert Interval [Medium]
+- [x] 57. Insert Interval [Medium]
 - [ ] 73. Set Matrix Zeroes [Medium]
 - [ ] 80. Remove Duplicates from Sorted Array II [Medium]
 - [ ] 86. Partition List [Medium]
