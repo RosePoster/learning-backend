@@ -85,7 +85,7 @@
 - [x] 48. Rotate Image [Medium]
 - [r] 54. Spiral Matrix [Medium]
 - [x] 57. Insert Interval [Medium]
-- [ ] 73. Set Matrix Zeroes [Medium]
+- [r] 73. Set Matrix Zeroes [Medium]
 - [ ] 80. Remove Duplicates from Sorted Array II [Medium]
 - [ ] 86. Partition List [Medium]
 - [ ] 179. Largest Number [Medium]
