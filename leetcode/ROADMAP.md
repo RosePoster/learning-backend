@@ -87,7 +87,7 @@
 - [x] 57. Insert Interval [Medium]
 - [r] 73. Set Matrix Zeroes [Medium]
 - [x] 80. Remove Duplicates from Sorted Array II [Medium]
-- [ ] 86. Partition List [Medium]
+- [x] 86. Partition List [Medium]
 - [ ] 179. Largest Number [Medium]
 - [ ] 220. Contains Duplicate III [Hard]
 - [ ] 289. Game of Life [Medium]
