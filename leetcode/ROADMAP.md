@@ -81,7 +81,7 @@
 
 国内大厂一面命中率最高。
 
-- [ ] 41. First Missing Positive [Hard]
+- [x/r] 41. First Missing Positive [Hard]
 - [x] 48. Rotate Image [Medium]
 - [r] 54. Spiral Matrix [Medium]
 - [x] 57. Insert Interval [Medium]
