@@ -89,7 +89,7 @@
 - [x] 80. Remove Duplicates from Sorted Array II [Medium]
 - [x] 86. Partition List [Medium]
 - [ ] 179. Largest Number [Medium]
-- [ ] 220. Contains Duplicate III [Hard]
+- [r] 220. Contains Duplicate III [Hard]
 - [ ] 289. Game of Life [Medium]
 - [ ] 324. Wiggle Sort II [Medium]
 - [ ] 912. Sort an Array [Medium]
