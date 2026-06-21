@@ -88,7 +88,7 @@
 - [r] 73. Set Matrix Zeroes [Medium]
 - [x] 80. Remove Duplicates from Sorted Array II [Medium]
 - [x] 86. Partition List [Medium]
-- [ ] 179. Largest Number [Medium]
+- [x/r] 179. Largest Number [Medium]
 - [r] 220. Contains Duplicate III [Hard]
 - [ ] 289. Game of Life [Medium]
 - [ ] 324. Wiggle Sort II [Medium]
