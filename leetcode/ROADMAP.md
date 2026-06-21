@@ -90,7 +90,7 @@
 - [x] 86. Partition List [Medium]
 - [x/r] 179. Largest Number [Medium]
 - [r] 220. Contains Duplicate III [Hard]
-- [ ] 289. Game of Life [Medium]
+- [x] 289. Game of Life [Medium]
 - [ ] 324. Wiggle Sort II [Medium]
 - [ ] 912. Sort an Array [Medium]
 - [ ] 973. K Closest Points to Origin [Medium]
