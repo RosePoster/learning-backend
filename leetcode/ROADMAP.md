@@ -91,7 +91,7 @@
 - [x/r] 179. Largest Number [Medium]
 - [r] 220. Contains Duplicate III [Hard]
 - [x] 289. Game of Life [Medium]
-- [ ] 324. Wiggle Sort II [Medium]
+- [r] 324. Wiggle Sort II [Medium]
 - [ ] 912. Sort an Array [Medium]
 - [ ] 973. K Closest Points to Origin [Medium]
 
