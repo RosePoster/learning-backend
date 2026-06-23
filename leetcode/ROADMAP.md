@@ -93,7 +93,7 @@
 - [x] 289. Game of Life [Medium]
 - [r] 324. Wiggle Sort II [Medium]
 - [x] 912. Sort an Array [Medium]
-- [ ] 973. K Closest Points to Origin [Medium]
+- [x] 973. K Closest Points to Origin [Medium]
 
 # ============== Round 4 · 旧轮反虚假进步审计（R1-R12）[Phase: AUDIT] ==============
 
