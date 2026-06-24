@@ -107,7 +107,7 @@
 
 旧 R1-R6 抽审（衰减最重的早期专题）：
 
-- [ ] 33. Search in Rotated Sorted Array [Medium]（R1，字节高频）
+- [x] 33. Search in Rotated Sorted Array [Medium]（R1，字节高频）
 - [ ] 153. Find Minimum in Rotated Sorted Array [Medium]（R1）
 - [ ] 162. Find Peak Element [Medium]（R1）
 - [ ] 560. Subarray Sum Equals K [Medium]（R2，字节高频）
