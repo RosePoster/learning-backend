@@ -113,7 +113,7 @@
 - [x] 560. Subarray Sum Equals K [Medium]（R2，字节高频）
 - [x] 347. Top K Frequent Elements [Medium]（R3）
 - [r] 424. Longest Repeating Character Replacement [Medium]（R5）
-- [ ] 287. Find the Duplicate Number [Medium]（R1，二分 + 快慢指针双解都要讲）
+- [x/r] 287. Find the Duplicate Number [Medium]（R1，二分 + 快慢指针双解都要讲）
 
 旧 R7-R12 审计：
 
