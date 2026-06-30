@@ -123,7 +123,7 @@
 - [x] 437. Path Sum III [Medium]（R10）
 - [ ] 124. Binary Tree Maximum Path Sum [Hard]（R10，已有笔记，限时验证）
 - [x] 199. Binary Tree Right Side View [Medium]（R9，原未刷）
-- [ ] 103. Binary Tree Zigzag Level Order Traversal [Medium]（R9，原未刷）
+- [x] 103. Binary Tree Zigzag Level Order Traversal [Medium]（R9，原未刷）
 - [ ] 206. Reverse Linked List [Easy]（R7，5min 极限）
 - [ ] 25. Reverse Nodes in k-Group [Hard]（R7，已有笔记，限时验证）
 - [ ] 138. Copy List with Random Pointer [Medium]（R7）
