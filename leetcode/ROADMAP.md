@@ -117,7 +117,7 @@
 
 旧 R7-R12 审计：
 
-- [ ] 297. Serialize and Deserialize Binary Tree [Hard]（R9）
+- [x] 297. Serialize and Deserialize Binary Tree [Hard]（R9）
 - [x] 236. Lowest Common Ancestor of a Binary Tree [Medium]（R10）
 - [x] 235. Lowest Common Ancestor of a BST [Medium]（R10）
 - [x] 437. Path Sum III [Medium]（R10）
