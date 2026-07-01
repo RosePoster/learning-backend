@@ -126,7 +126,7 @@
 - [x] 103. Binary Tree Zigzag Level Order Traversal [Medium]（R9，原未刷）
 - [ ] 206. Reverse Linked List [Easy]（R7，5min 极限）
 - [ ] 25. Reverse Nodes in k-Group [Hard]（R7，已有笔记，限时验证）
-- [ ] 138. Copy List with Random Pointer [Medium]（R7）
+- [x/r] 138. Copy List with Random Pointer [Medium]（R7）
 - [ ] 142. Linked List Cycle II [Medium]（R7）
 - [ ] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
 - [ ] 46. Permutations [Medium]（R11）
