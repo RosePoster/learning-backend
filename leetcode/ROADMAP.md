@@ -128,7 +128,7 @@
 - [ ] 25. Reverse Nodes in k-Group [Hard]（R7，已有笔记，限时验证）
 - [x/r] 138. Copy List with Random Pointer [Medium]（R7）
 - [x] 142. Linked List Cycle II [Medium]（R7）
-- [ ] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
+- [x] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
 - [ ] 46. Permutations [Medium]（R11）
 - [ ] 47. Permutations II [Medium]（R11，原未刷）
 - [ ] 79. Word Search [Medium]（R11）
