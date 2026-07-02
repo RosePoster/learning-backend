@@ -129,7 +129,7 @@
 - [x/r] 138. Copy List with Random Pointer [Medium]（R7）
 - [x] 142. Linked List Cycle II [Medium]（R7）
 - [x] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
-- [ ] 46. Permutations [Medium]（R11）
+- [x] 46. Permutations [Medium]（R11）
 - [ ] 47. Permutations II [Medium]（R11，原未刷）
 - [ ] 79. Word Search [Medium]（R11）
 - [ ] 56. Merge Intervals [Medium]（R12）
