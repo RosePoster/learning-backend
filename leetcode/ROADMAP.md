@@ -133,7 +133,7 @@
 - [x] 47. Permutations II [Medium]（R11，原未刷）
 - [x] 79. Word Search [Medium]（R11）
 - [x] 56. Merge Intervals [Medium]（R12）
-- [ ] 230. Kth Smallest Element in a BST [Medium]（R10，原未刷，字节高频）
+- [x] 230. Kth Smallest Element in a BST [Medium]（R10，原未刷，字节高频）
 
 # ============== Round 5 · Monotonic Stack 变体 [Phase: NEW] ==============
 
