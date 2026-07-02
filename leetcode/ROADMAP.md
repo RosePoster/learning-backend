@@ -131,7 +131,7 @@
 - [x] 92. Reverse Linked List II [Medium]（R7，原未刷，顺带补）
 - [x] 46. Permutations [Medium]（R11）
 - [x] 47. Permutations II [Medium]（R11，原未刷）
-- [ ] 79. Word Search [Medium]（R11）
+- [x] 79. Word Search [Medium]（R11）
 - [ ] 56. Merge Intervals [Medium]（R12）
 - [ ] 230. Kth Smallest Element in a BST [Medium]（R10，原未刷，字节高频）
 
