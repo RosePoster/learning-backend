@@ -124,7 +124,6 @@
 - [x] 124. Binary Tree Maximum Path Sum [Hard]（R10，已有笔记，限时验证）
 - [x] 199. Binary Tree Right Side View [Medium]（R9，原未刷）
 - [x] 103. Binary Tree Zigzag Level Order Traversal [Medium]（R9，原未刷）
-- [ ] 206. Reverse Linked List [Easy]（R7，5min 极限）
 - [x] 25. Reverse Nodes in k-Group [Hard]（R7，已有笔记，限时验证）
 - [x/r] 138. Copy List with Random Pointer [Medium]（R7）
 - [x] 142. Linked List Cycle II [Medium]（R7）
@@ -140,7 +139,7 @@
 已过模板题（42/84/239），本轮补变体辨识能力。
 
 - [ ] 321. Create Maximum Number [Hard]
-- [ ] 1856. Maximum Subarray Min-Product [Medium]
+- [x/r] 1856. Maximum Subarray Min-Product [Medium]
 - [ ] 2104. Sum of Subarray Ranges [Medium]
 - [ ] 1944. Number of Visible People in a Queue [Hard]
 - [ ] 862. Shortest Subarray with Sum at Least K [Hard]
@@ -632,7 +631,7 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - 笔记优先级：设计题 > 图论 > 单调栈/队列 > 滑动窗口变种 > 经典 Hard。
 - buffer 充裕（投递期 2027-02 ~ 04 才开始）：1-2 个月留给项目准备，其余用于 R18 终局 mock + UNSEEN + wrong-list 反复刷 + 弹性。
 - 春节窗口 1/28 – 2/10 默认零产出，不要骗自己。
-- **笔记目录约定：每个 round 目录下用 `note.md` 写本轮专题总结（不再有中心化 `templates/` 目录）。已完成的旧 Round 在 `legacy/<专题>/` 下，整体 insight 笔记也放在该目录的 `note.md`。**
+- **笔记目录约定：所有横向总结集中在 `insight/` 目录（轮次复盘 `round-*.md`、专题总结 `topic-*.md`、专项 `deep-dive-*` / `java-api-fluency.md`），体例见 `insight/README.md`。单题笔记仍在各题目录的 README.md。**
 
 ## Review 调度建议（[r] / [x/r] 题）
 
