@@ -140,7 +140,7 @@
 
 - [ ] 321. Create Maximum Number [Hard]
 - [x/r] 1856. Maximum Subarray Min-Product [Medium]
-- [ ] 2104. Sum of Subarray Ranges [Medium]
+- [r] 2104. Sum of Subarray Ranges [Medium]
 - [ ] 1944. Number of Visible People in a Queue [Hard]
 - [ ] 862. Shortest Subarray with Sum at Least K [Hard]
 - [ ] 901. Online Stock Span [Medium]
