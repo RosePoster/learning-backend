@@ -144,7 +144,7 @@
 - [ ] 1944. Number of Visible People in a Queue [Hard]
 - [ ] 862. Shortest Subarray with Sum at Least K [Hard]
 - [x] 901. Online Stock Span [Medium]
-- [ ] 456. 132 Pattern [Medium]
+- [x/r] 456. 132 Pattern [Medium]
 - [ ] 735. Asteroid Collision [Medium]
 - [ ] 1673. Find the Most Competitive Subsequence [Medium]
 - [ ] 2398. Maximum Number of Robots Within Budget [Hard]
