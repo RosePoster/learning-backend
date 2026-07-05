@@ -143,7 +143,7 @@
 - [r] 2104. Sum of Subarray Ranges [Medium]
 - [ ] 1944. Number of Visible People in a Queue [Hard]
 - [ ] 862. Shortest Subarray with Sum at Least K [Hard]
-- [ ] 901. Online Stock Span [Medium]
+- [x] 901. Online Stock Span [Medium]
 - [ ] 456. 132 Pattern [Medium]
 - [ ] 735. Asteroid Collision [Medium]
 - [ ] 1673. Find the Most Competitive Subsequence [Medium]
