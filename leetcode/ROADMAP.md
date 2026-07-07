@@ -138,7 +138,7 @@
 
 已过模板题（42/84/239），本轮补变体辨识能力。
 
-- [ ] 321. Create Maximum Number [Hard]
+- [r] 321. Create Maximum Number [Hard]
 - [x/r] 1856. Maximum Subarray Min-Product [Medium]
 - [r] 2104. Sum of Subarray Ranges [Medium]
 - [ ] 1944. Number of Visible People in a Queue [Hard]
