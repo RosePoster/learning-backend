@@ -145,7 +145,7 @@
 - [r] 862. Shortest Subarray with Sum at Least K [Hard]
 - [x] 901. Online Stock Span [Medium]
 - [x/r] 456. 132 Pattern [Medium]
-- [ ] 735. Asteroid Collision [Medium]
+- [x] 735. Asteroid Collision [Medium]
 - [ ] 1673. Find the Most Competitive Subsequence [Medium]
 - [ ] 2398. Maximum Number of Robots Within Budget [Hard]
 
