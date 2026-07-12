@@ -147,7 +147,7 @@
 - [x/r] 456. 132 Pattern [Medium]
 - [x] 735. Asteroid Collision [Medium]
 - [x] 1673. Find the Most Competitive Subsequence [Medium]
-- [ ] 2398. Maximum Number of Robots Within Budget [Hard]
+- [x] 2398. Maximum Number of Robots Within Budget [Hard]
 
 # ============== Round 6 · Math / Bit / Trick 补盲 [Phase: NEW] ==============
 
