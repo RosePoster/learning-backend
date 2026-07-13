@@ -153,7 +153,7 @@
 
 补 421 暴露过的位运算盲区 + 字节字符串模拟高频。
 
-- [ ] 50. Pow(x, n) [Medium]
+- [x] 50. Pow(x, n) [Medium]
 - [ ] 29. Divide Two Integers [Medium]
 - [ ] 43. Multiply Strings [Medium]
 - [ ] 172. Factorial Trailing Zeroes [Medium]
