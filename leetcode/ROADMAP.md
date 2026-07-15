@@ -160,7 +160,7 @@
 - [x/r] 166. Fraction to Recurring Decimal [Medium]
 - [ ] 415. Add Strings [Easy]
 - [ ] 273. Integer to English Words [Hard]
-- [ ] 8. String to Integer (atoi) [Medium]（字节字符串模拟高频，边界陷阱密集）
+- [x] 8. String to Integer (atoi) [Medium]（字节字符串模拟高频，边界陷阱密集）
 - [ ] 165. Compare Version Numbers [Medium]（字节高频）
 
 # ============== Round 7 · Design 第二批 [Phase: NEW] ==============
