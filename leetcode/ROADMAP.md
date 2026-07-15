@@ -156,7 +156,7 @@
 - [x] 50. Pow(x, n) [Medium]
 - [x] 29. Divide Two Integers [Medium]
 - [x] 43. Multiply Strings [Medium]
-- [ ] 172. Factorial Trailing Zeroes [Medium]
+- [x] 172. Factorial Trailing Zeroes [Medium]
 - [ ] 166. Fraction to Recurring Decimal [Medium]
 - [ ] 415. Add Strings [Easy]
 - [ ] 273. Integer to English Words [Hard]
