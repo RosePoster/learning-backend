@@ -157,7 +157,7 @@
 - [x] 29. Divide Two Integers [Medium]
 - [x] 43. Multiply Strings [Medium]
 - [x] 172. Factorial Trailing Zeroes [Medium]
-- [ ] 166. Fraction to Recurring Decimal [Medium]
+- [x/r] 166. Fraction to Recurring Decimal [Medium]
 - [ ] 415. Add Strings [Easy]
 - [ ] 273. Integer to English Words [Hard]
 - [ ] 8. String to Integer (atoi) [Medium]（字节字符串模拟高频，边界陷阱密集）
