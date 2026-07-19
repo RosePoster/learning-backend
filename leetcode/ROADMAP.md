@@ -303,6 +303,39 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 # ============== Round 19 · Review & Re-attempt [Phase: AUDIT/REVIEW] ==============
 
 所有标记为 [r]（耗时崩盘）与 [x/r]（值得重做）的题目集合，穿插于前面各轮中间完成。
+（2026-07-18 中期复盘补录新 R1-R6 标记题，见 `insight/midterm-review-2026-07.md` 第六节。）
+
+## 新轮 [r]（优先消化，R9 启动前清完）
+
+- [ ] 460. LFU Cache [r]（新 R2，Hard，R7 Design 第二批的直接前置） ｜重做未过：2026-07-19
+- [ ] 321. Create Maximum Number [r]（新 R5，Hard，重做标准见 round-05）
+- [ ] 2104. Sum of Subarray Ranges [r]（新 R5，重做标准：不试符号、先写相等归属论证）
+- [ ] 862. Shortest Subarray with Sum at Least K [r]（新 R5，Hard，重做标准：主流单调队列 O(n) 版 + 讲清与支配关系推导的等价性）
+- [ ] 424. Longest Repeating Character Replacement [r]（新 R4，重做标准：历史 maxFreq 不回退版 + 讲清为何不污染答案）
+- [ ] 54. Spiral Matrix [r]（新 R3，字节高频）
+- [ ] 73. Set Matrix Zeroes [r]（新 R3）
+- [ ] 220. Contains Duplicate III [r]（新 R3，Hard）
+- [ ] 324. Wiggle Sort II [r]（新 R3，重点：三向 partition + quickselect 下标版）
+- [ ] 721. Accounts Merge [r]（新 R1）
+- [ ] 1489. Find Critical and Pseudo-Critical Edges in MST [r]（新 R1，Hard，重做标准：先写主流"禁用/强制 Kruskal"版）
+
+## 新轮 [x/r]（分散到 R9-R11 期间作小菜）
+
+- [ ] 990. Satisfiability of Equality Equations [x/r]（新 R1）
+- [ ] 685. Redundant Connection II [x/r]（新 R1，Hard）
+- [ ] 959. Regions Cut By Slashes [x/r]（新 R1）
+- [ ] 380. Insert Delete GetRandom O(1) [x/r]（新 R2）
+- [ ] 41. First Missing Positive [x/r]（新 R3，Hard）
+- [ ] 179. Largest Number [x/r]（新 R3）
+- [ ] 287. Find the Duplicate Number [x/r]（新 R4，重做标准：白板完整推出 a = kb - c 并讲出声）
+- [ ] 138. Copy List with Random Pointer [x/r]（新 R4）
+- [ ] 1856. Maximum Subarray Min-Product [x/r]（新 R5）
+- [ ] 1944. Number of Visible People in a Queue [x/r]（新 R5，Hard）
+- [ ] 456. 132 Pattern [x/r]（新 R5）
+- [ ] 166. Fraction to Recurring Decimal [x/r]（新 R6）
+- 146. LRU Cache [x/r]（新 R2）→ 不单列，由 R9 / R18 MOCK 自然重考
+
+## 旧轮存量
 
 - [ ] 224. Basic Calculator [x/r]（旧 R8）
 - [ ] 227. Basic Calculator II [x/r]（旧 R8）
@@ -635,25 +668,19 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 
 ## Review 调度建议（[r] / [x/r] 题）
 
-软件 review 模式应按以下节奏穿插推进区主线：
+（2026-07-18 中期复盘修订。原"3 道旧 [r] 在新 R1-5 期间消化"未执行，积压已达 37 题，节奏加严。）
 
-- **节奏：每 5-7 道新题穿插 1 道 review 题**，避免堆积到末期。
-- **优先级：`[r]` > `[x/r]`**（前者是耗时崩盘，后者只是值得再做）。
-- **建议时间窗：**
-  - `[r]` 共 3 道，**建议在新 Round 1-5 期间消化完**（前 3 个月）：
-    - 1203. Sort Items by Groups Respecting Dependencies（旧 R14，Hard）
-    - 752. Open the Lock（旧 R13，Medium）
-    - 316. Remove Duplicate Letters（旧 R8，Medium）
-  - `[x/r]` 共 10 道，**建议在新 Round 3-11 期间分散完成**（中段）：
-    - 442. Find All Duplicates in an Array（旧 R6）
-    - 310. Minimum Height Trees（旧 R14）
-    - 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance（旧 R14）
-    - 542. 01 Matrix（旧 R13）
-    - 417. Pacific Atlantic Water Flow（旧 R13）
-    - 127. Word Ladder（旧 R13）
-    - 909. Snakes and Ladders（旧 R13）
-    - 227. Basic Calculator II（旧 R8）
-    - 224. Basic Calculator（旧 R8）
-    - 1249. Minimum Remove to Make Valid Parentheses（旧 R8）
+- **节奏（R7-R8 还债期）：每 2-3 道新题穿插 1 道 `[r]`**。R7+R8 共 15 道新题，可消化 5-7 道；剩余 `[r]` 在 R9 前的 UNSEEN 间隙清完。**R9 MOCK 启动前 `[r]` 必须清零。**
+- **`[r]` 优先序**：460 → 321 / 2104 / 862 → 424 → 54 / 73 / 220 / 324 → 316 / 752 / 1203（旧账）→ 721 / 1489。
+- **`[x/r]`**：分散到 R9-R11 期间作小菜；146 由 R9/R18 MOCK 自然重考，不单独安排。
 - review 题不挤压每日主菜：review 题作为当日**小菜**（限时 30min 重写，对比旧版找改进点）。
 - 重做后通过则把标记升级为 `[x]`；仍有问题保留 `[x/r]`。
+- 重做题一律执行"出声讲不变量"标准（含 AUDIT，见 round-04 复盘）。
+
+## UNSEEN 执行日志
+
+（无日志视同未执行。每 1-2 周一场；R9-R11 MOCK 期间可降频至每 2 周一场，不可中断。格式：日期 | 来源（周赛/公司 tag）| 题号 | 结果 | 暴露盲区 → 反馈 Round。）
+
+| 日期 | 来源 | 题号 | 结果 | 暴露盲区 → 反馈 |
+|---|---|---|---|---|
+|  |  |  |  |  |
