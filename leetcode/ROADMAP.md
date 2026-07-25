@@ -166,7 +166,7 @@
 # ============== Round 7 · Design 第二批 [Phase: NEW] ==============
 
 - [ ] 895. Maximum Frequency Stack [Hard]
-- [ ] 341. Flatten Nested List Iterator [Medium]
+- [x] 341. Flatten Nested List Iterator [Medium]
 - [ ] 1381. Design a Stack With Increment Operation [Medium]
 - [ ] 641. Design Circular Deque [Medium]
 - [ ] 362. Design Hit Counter [Medium]
