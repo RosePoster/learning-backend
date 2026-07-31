@@ -172,7 +172,7 @@
 - [ ] 362. Design Hit Counter [Medium]
 - [ ] 359. Logger Rate Limiter [Easy]
 - [ ] 284. Peeking Iterator [Medium]
-- [ ] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
+- [x/r] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
 
 # ============== Round 8 · DP cherry-pick [Phase: NEW] ==============
 
