@@ -169,9 +169,9 @@
 - [x] 341. Flatten Nested List Iterator [Medium]
 - [x] 1381. Design a Stack With Increment Operation [Medium]
 - [x] 641. Design Circular Deque [Medium]
-- [ ] 362. Design Hit Counter [Medium]
+- [-] 362. Design Hit Counter [Medium]
 - [ ] 359. Logger Rate Limiter [Easy]
-- [ ] 284. Peeking Iterator [Medium]
+- [x] 284. Peeking Iterator [Medium]
 - [x/r] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
 
 # ============== Round 8 · DP cherry-pick [Phase: NEW] ==============
