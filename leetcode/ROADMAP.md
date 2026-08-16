@@ -170,7 +170,7 @@
 - [x] 1381. Design a Stack With Increment Operation [Medium]
 - [x] 641. Design Circular Deque [Medium]
 - [-] 362. Design Hit Counter [Medium]
-- [ ] 359. Logger Rate Limiter [Easy]
+- [-] 359. Logger Rate Limiter [Easy]
 - [x] 284. Peeking Iterator [Medium]
 - [x/r] 381. Insert Delete GetRandom O(1) - Duplicates allowed [Hard]
 
@@ -178,7 +178,7 @@
 
 DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展。
 
-- [ ] 221. Maximal Square [Medium]（旧 R16 唯一未做）
+- [x] 221. Maximal Square [Medium]（旧 R16 唯一未做）
 - [ ] 97. Interleaving String [Medium]
 - [ ] 10. Regular Expression Matching [Hard]
 - [ ] 44. Wildcard Matching [Hard]
@@ -683,4 +683,4 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 
 | 日期 | 来源 | 题号 | 结果 | 暴露盲区 → 反馈 |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| 2026-07-31 | 周赛 | 3998 | 35min | 刻画独立完成;1/? 格判断错误,靠 LC 测试暴露(违反 MOCK 自证标准);贪心超支的守恒关系未显式陈述。 |
