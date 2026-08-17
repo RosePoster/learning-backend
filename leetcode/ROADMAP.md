@@ -179,7 +179,7 @@
 DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展。
 
 - [x] 221. Maximal Square [Medium]（旧 R16 唯一未做）
-- [ ] 97. Interleaving String [Medium]
+- [x] 97. Interleaving String [Medium]
 - [ ] 10. Regular Expression Matching [Hard]
 - [ ] 44. Wildcard Matching [Hard]
 - [ ] 91. Decode Ways [Medium]
