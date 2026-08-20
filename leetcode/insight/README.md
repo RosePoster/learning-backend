@@ -23,6 +23,9 @@
 | [round-03-advanced-array-matrix.md](round-03-advanced-array-matrix.md) | 原地编码三层级；quickselect 区分下标版/数量版停止条件 |
 | [round-04-audit-r1-r12.md](round-04-audit-r1-r12.md) | 模板不衰减，衰减的是推导链与方案选择判断力 |
 | [round-05-monotonic-stack.md](round-05-monotonic-stack.md) | 单调结构的本质是支配关系；相等归属先论证再写符号 |
+| [round-06-math-bit-trick.md](round-06-math-bit-trick.md) | 把手工算法的中间状态显式化；补盲达成，缺口只剩实现层 |
+| [round-07-design.md](round-07-design.md) | 推迟与重编码降低维护成本；延迟是否合法取决于它污染了哪条不变量 |
+| [round-08-dp-cherry-pick.md](round-08-dp-cherry-pick.md) | DP 的默认语义是全枚举，功夫在裁剪判据；裁剪本身也会过度 |
 
 ### 中期复盘
 
@@ -46,6 +49,7 @@
 
 | 文档 | 主题 |
 |---|---|
+| [topic-direct-modeling.md](topic-direct-modeling.md) | 风格刻画：把题面约束直接翻译成状态与转移，结构贴题意而非贴范式 |
 | [deep-dive-1334-resumable-dijkstra.md](deep-dive-1334-resumable-dijkstra.md) | 缓存正确性强于搜索正确性；代码留档于 [1334/](1334/) |
 | [java-api-fluency.md](java-api-fluency.md) | Java 标准库速查与默写制度（横切缺口） |
 
@@ -58,4 +62,8 @@
 Round 1： 工具不能越界（等价连通原语 ≠ 万能图工具）
 Round 4： 状态不能太强（历史上界够用时不维护真实值）；记忆不能只剩结论（推导链先于结论蒸发）
 Round 2/3：隐性约束显性化（结构同步等式；值/下标映射方向）
+Round 5/8：状态不能太多（被支配者可删——单调结构与 DP 裁剪是同一命题的两种载体）
+Round 7：  推迟计算的合法性 = 它是否污染了另一条不变量
 ```
+
+尚缺 `topic-*` 专题总结的旧轮：`bst-tree-dp-lca`、`dp-string`、`linked-list`、`monotonic-stack-and-queue`、`stack-queue-parsing`（从未编写，非整合时遗失）。其中 dp-string 缺口最大——DP 经旧 R16-R19 三轮沉淀，却无任何专题总结。
