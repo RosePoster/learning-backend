@@ -1,6 +1,6 @@
 # 1381. Design a Stack With Increment Operation
 
-耗时：14min
+耗时：未记录（计时器数据作废）
 
 ## 我的思考
 维护两个数组：

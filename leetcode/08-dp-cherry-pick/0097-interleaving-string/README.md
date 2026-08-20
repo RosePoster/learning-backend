@@ -1,6 +1,6 @@
 # 97. Interleaving String
 
-耗时：1155min
+耗时：未记录（计时器数据作废；思路约 5min 得出）
 
 ## 我的思考
 

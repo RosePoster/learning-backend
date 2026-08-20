@@ -1,6 +1,6 @@
 # 10. Regular Expression Matching
 
-耗时：<1min
+耗时：未记录（计时器数据作废）
 
 ## 我的思考
 定义 `dp[i][j]`：`p` 的前 `j` 个字符能否完整匹配 `s` 的前 `i` 个字符。

@@ -1,6 +1,6 @@
 # 329. Longest Increasing Path in a Matrix
 
-耗时：<1min
+耗时：未记录（计时器数据作废）
 
 ## 我的思考
 这题思路比较直白，关键在于利用矩阵中严格递增的关系。
