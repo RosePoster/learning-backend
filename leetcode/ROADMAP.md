@@ -35,6 +35,8 @@
 | 17 | Reservoir Sampling + 概率 + Trie 深度变体 | NEW | 6 |
 | 18 | Hard 终局 mock（贴投递面试期）| MOCK | 12 |
 
+**推进顺序调整（2026-08-21）**：Round 12 已前置到 Round 9 之前，其余顺序不变；扫描规则仍为"从上往下扫第一个 `[ ]`"，故文档中的区块顺序即推进顺序。原因见该轮区块说明。
+
 合计 **157 题**（UNSEEN 场次另计），预算充裕；投递期 2027-02 ~ 04 之前收完主线，剩余时间用于项目准备 + 终局 mock + wrong-list 反复刷。
 
 ### 标记说明
@@ -186,6 +188,19 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [x] 329. Longest Increasing Path in a Matrix [Hard]
 - [x] 403. Frog Jump [Hard]
 
+# ============== Round 12 · 多线程 / 并发同步 [Phase: NEW] ==============
+
+Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
+
+> **推进顺序调整（2026-08-21）**：本轮已前置到 Round 9 之前，轮次编号不变。
+> 原因：R9-R11 均为 MOCK 轮、全轮 45min 硬截止；2026-08 期间外部事务占用精力，限时任务出现回避（`[r]` 消化为 0，2104 重做于 08-01 开头未完成，主线 07-31 至 08-16 中断 16 天）。本轮题量小（4 题）、属新知识而非限时复盘，且与 Java 后端八股直接对口，适合作为恢复期主线。
+> 恢复条件：本轮完成后重新评估精力状态；恢复则回到 Round 9 按编号继续推进，不再连续插队。
+
+- [ ] 1114. Print in Order [Easy]
+- [ ] 1115. Print FooBar Alternately [Medium]
+- [ ] 1116. Print Zero Even Odd [Medium]
+- [ ] 1117. Building H2O [Medium]
+
 # ============== Round 9 · ByteDance 高频 I [Phase: MOCK] ==============
 
 题目大多在主线已 `[x]`，本轮 mock 模式独立重做（白板限时 45min）。
@@ -223,15 +238,6 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [ ] 206. Reverse Linked List [Easy]（5min 极限标准）
 - [ ] 215. Kth Largest Element in an Array [Medium]
 - [ ] 300. Longest Increasing Subsequence [Medium]
-
-# ============== Round 12 · 多线程 / 并发同步 [Phase: NEW] ==============
-
-Java 后端八股的实际落地。配合 JUC 知识体系一起复习。
-
-- [ ] 1114. Print in Order [Easy]
-- [ ] 1115. Print FooBar Alternately [Medium]
-- [ ] 1116. Print Zero Even Odd [Medium]
-- [ ] 1117. Building H2O [Medium]
 
 # ============== Round 13 · Segment Tree / BIT [Phase: NEW] ==============
 
@@ -303,9 +309,9 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 # ============== Round 19 · Review & Re-attempt [Phase: AUDIT/REVIEW] ==============
 
 所有标记为 [r]（耗时崩盘）与 [x/r]（值得重做）的题目集合，穿插于前面各轮中间完成。
-（2026-07-18 中期复盘补录新 R1-R6 标记题，见 `insight/midterm-review-2026-07.md` 第六节。）
+（2026-07-18 中期复盘补录新 R1-R6 标记题，见 `insight/midterm-review-2026-07.md` 第六节；2026-08-21 补录新 R7-R8 标记题 381 / 10，见 `insight/round-07-design.md`、`insight/round-08-dp-cherry-pick.md` 执行层。）
 
-## 新轮 [r]（优先消化，R9 启动前清完）
+## 新轮 [r]（优先消化；启动前置要求已于 2026-08-21 取消，见下方"Review 调度建议"）
 
 - [ ] 460. LFU Cache [r]（新 R2，Hard，R7 Design 第二批的直接前置） ｜重做未过：2026-07-19
 - [ ] 321. Create Maximum Number [r]（新 R5，Hard，重做标准见 round-05）
@@ -321,6 +327,8 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 
 ## 新轮 [x/r]（分散到 R9-R11 期间作小菜）
 
+> 注意：380（新 R2）与 381（新 R7）是不同题目，勿混。
+
 - [ ] 990. Satisfiability of Equality Equations [x/r]（新 R1）
 - [ ] 685. Redundant Connection II [x/r]（新 R1，Hard）
 - [ ] 959. Regions Cut By Slashes [x/r]（新 R1）
@@ -332,7 +340,9 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 - [ ] 1856. Maximum Subarray Min-Product [x/r]（新 R5）
 - [ ] 1944. Number of Visible People in a Queue [x/r]（新 R5，Hard）
 - [ ] 456. 132 Pattern [x/r]（新 R5）
-- [ ] 166. Fraction to Recurring Decimal [x/r]（新 R6）
+- [ ] 166. Fraction to Recurring Decimal [x/r]（新 R6，重做标准：直接用 `/` 与 `%` 只模拟小数部分，讲清"余数重复即循环"）
+- [ ] 381. Insert Delete GetRandom O(1) - Duplicates allowed [x/r]（新 R7，Hard，2026-08-21 补录，重做标准：直接写"末尾即待删值则免交换"的最终版，出声讲清概率不变量与 Set 别名成立条件）
+- [ ] 10. Regular Expression Matching [x/r]（新 R8，Hard，2026-08-21 补录，重做标准：先写主流二维 DP，再讲清一维压缩中 `up` / `pre` / `dp[j-1]` 的语义与 `*` 不更新 `pre` 的理由）
 - 146. LRU Cache [x/r]（新 R2）→ 不单列，由 R9 / R18 MOCK 自然重考
 
 ## 旧轮存量
@@ -670,7 +680,12 @@ AI 应用 / 推荐系统 / 搜索建议的算法基础。
 
 （2026-07-18 中期复盘修订。原"3 道旧 [r] 在新 R1-5 期间消化"未执行，积压已达 37 题，节奏加严。）
 
-- **节奏（R7-R8 还债期）：每 2-3 道新题穿插 1 道 `[r]`**。R7+R8 共 15 道新题，可消化 5-7 道；剩余 `[r]` 在 R9 前的 UNSEEN 间隙清完。**R9 MOCK 启动前 `[r]` 必须清零。**
+- **节奏（原定）**：R7-R8 还债期每 2-3 道新题穿插 1 道 `[r]`，预期消化 5-7 道。**实际执行 0 道**——R7+R8 共完成 13 道新题，期间 460 于 2026-07-19 重做一次未过（40min 超时），2104 于 08-01 开头未完成，无一道升级为 `[x]`。
+- **门槛改期（2026-08-21）**：原规则"R9 MOCK 启动前 `[r]` 必须清零"**取消**，`[r]` 不再作为任何轮次的启动前置。
+  - 理由一：门槛的目的是让 MOCK 建立在干净基础上，但 MOCK 本身就是检验器——未修复的 `[r]` 会在 45min 硬截止下直接暴露，不需要一个前置阶段来提前保证。
+  - 理由二：把清零设为前置，等于在精力低谷期先安排一段纯还债的串行阶段（按 460 实测 40min/题计，24 道约需 3-4 周），而还债任务无新增覆盖、无即时反馈，正是 2026-08 中断的高发形态。
+  - 理由三：挂着不做的门槛本身构成负担并助长回避，显式改期优于保留。
+  - 新安排：恢复期结束后重启 `[r]` 消化，届时再定节奏；优先序不变。
 - **`[r]` 优先序**：460 → 321 / 2104 / 862 → 424 → 54 / 73 / 220 / 324 → 316 / 752 / 1203（旧账）→ 721 / 1489。
 - **`[x/r]`**：分散到 R9-R11 期间作小菜；146 由 R9/R18 MOCK 自然重考，不单独安排。
 - review 题不挤压每日主菜：review 题作为当日**小菜**（限时 30min 重写，对比旧版找改进点）。

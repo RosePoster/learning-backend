@@ -27,4 +27,4 @@ high-frequency coverage > stable recall > clean implementation > raw volume
 
 - UNSEEN：每 1-2 周一场，结果记入 ROADMAP 的 UNSEEN 执行日志；无日志视同未执行。
 - Java API / 实现层默写：每周日第一题前 5 分钟，结果记入 `insight/java-api-fluency.md` 尾部日志；分区含 API、位运算积木、数值表达式（MOD / long）、三向切分模板。
-- R9 启动前：`[r]` 清零 + 建最小测试脚手架（main 模板，服务 MOCK 自造反例与 ACM 笔试 IO）。
+- MOCK 轮（R9-R11）启动前：建最小测试脚手架（main 模板，服务 MOCK 自造反例与 ACM 笔试 IO）。`[r]` 清零的前置要求已于 2026-08-21 取消，见 ROADMAP "Review 调度建议"。
