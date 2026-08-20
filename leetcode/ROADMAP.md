@@ -183,7 +183,7 @@ DP 是强项（三轮沉淀），仅 cherry-pick 高级变体作为知识扩展�
 - [x/r] 10. Regular Expression Matching [Hard]
 - [x] 44. Wildcard Matching [Hard]
 - [x] 91. Decode Ways [Medium]
-- [ ] 329. Longest Increasing Path in a Matrix [Hard]
+- [x] 329. Longest Increasing Path in a Matrix [Hard]
 - [ ] 403. Frog Jump [Hard]
 
 # ============== Round 9 · ByteDance 高频 I [Phase: MOCK] ==============
