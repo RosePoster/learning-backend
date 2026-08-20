@@ -1,9 +1,16 @@
 class Solution {
     public void wiggleSort(int[] nums) {
         int n = nums.length;
-        quickSelect(nums);
-        
-        for(int i = 0; i < n)
+        int[] selectNums = Arrays.copyOf(nums, n);
+        quickSelect(selectNums);
+        int smallOrEquel = (n + 1) / 2 - 1;
+        int largeOrEquel = n - 1;
+        boolean isSamll = true;
+        for(int i = 0; i < n; i++) {
+            int num = isSamll ? selectNums[smallOrEquel--] : selectNums[largeOrEquel--];
+            nums[i] = num;
+            isSamll = !isSamll;
+        }
     }
 
     private void quickSelect(int[] nums) {
